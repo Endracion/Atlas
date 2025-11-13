@@ -2,7 +2,7 @@
 backend:
   name: git-gateway
   repo: Endracion/Atlas
-  branch: main
+  branch: master
   identity_url: https://auth.decapbridge.com/sites/529bc2f7-9787-4e38-ae54-62c42900168c
   gateway_url: https://gateway.decapbridge.com
 
