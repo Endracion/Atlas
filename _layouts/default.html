@@ -6,6 +6,9 @@
   <title>{{ page.title }} - {{ site.title }}</title>
   <meta name="description" content="{{ site.description }}">
   
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  
   <!-- CSS Framework -->
   <link rel="stylesheet" href="/assets/css/main.css">
   
@@ -17,7 +20,9 @@
   <nav class="navbar">
     <div class="container">
       <a href="/" class="logo">
-        <i class="fas fa-hammer"></i> {{ site.title }}
+        <img src="/assets/images/AtlasLogoTransparent.png" alt="{{ site.title }} Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+        <span style="display:none;"><i class="fas fa-hammer"></i></span>
+        {{ site.title }}
       </a>
       
       <ul class="nav-menu">
@@ -59,7 +64,7 @@
         </div>
         <div>
           <h4>Licenses</h4>
-          <p>{{ site.license | default: 'Licensed General Contractor (RBQ XXXX-XXXX-XX)' }}</p>
+          <p>{{ site.license | default: 'Licensed General Contractor (RBQ 5731-6820-01)' }}</p>
         </div>
       </div>
       <div class="text-center mt-3">

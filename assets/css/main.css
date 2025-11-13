@@ -8,10 +8,11 @@
 }
 
 :root {
-  /* Color Palette - Construction Theme */
-  --primary-color: #2c5aa0;
-  --secondary-color: #f39c12;
-  --accent-color: #e67e22;
+  /* Color Palette - Atlas Red Theme */
+  --primary-color: #be2c33;
+  --primary-dark: #a62329;
+  --secondary-color: #2c3e50;
+  --accent-color: #f39c12;
   --text-dark: #2c3e50;
   --text-light: #7f8c8d;
   --text-white: #ffffff;
@@ -97,7 +98,7 @@ p {
   transform: translateX(-50%);
   width: 60px;
   height: 3px;
-  background-color: var(--secondary-color);
+  background-color: var(--accent-color);
 }
 
 /* Grid System */
@@ -130,7 +131,7 @@ p {
 }
 
 .btn-primary:hover {
-  background-color: #1e3d72;
+  background-color: var(--primary-dark);
   transform: translateY(-2px);
 }
 
@@ -140,7 +141,7 @@ p {
 }
 
 .btn-secondary:hover {
-  background-color: #d68910;
+  background-color: #1a252f;
   transform: translateY(-2px);
 }
 
@@ -201,16 +202,25 @@ p {
 }
 
 .logo {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--primary-color);
   text-decoration: none;
 }
 
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
 .nav-menu {
   display: flex;
   list-style: none;
   gap: var(--spacing-md);
+  align-items: center;
 }
 
 .nav-link {
@@ -230,7 +240,7 @@ p {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, var(--primary-color) 0%, #1e3d72 100%);
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
   color: var(--text-white);
   padding: var(--spacing-xl) 0;
   text-align: center;
@@ -265,7 +275,7 @@ p {
   width: 80px;
   height: 80px;
   margin: 0 auto var(--spacing-md);
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -319,7 +329,7 @@ select:focus,
 textarea:focus {
   outline: none;
   border-color: var(--primary-color);
-  box-shadow: 0 0 0 3px rgba(44, 90, 160, 0.1);
+  box-shadow: 0 0 0 3px rgba(190, 44, 51, 0.1);
 }
 
 textarea {
@@ -354,6 +364,7 @@ select {
   font-size: 1.25rem;
   margin-top: 4px;
   min-width: 20px;
+  color: var(--primary-color);
 }
 
 .contact-item h4 {
@@ -462,7 +473,7 @@ select {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, rgba(44, 90, 160, 0.9), rgba(30, 61, 114, 0.9));
+  background: linear-gradient(45deg, rgba(190, 44, 51, 0.9), rgba(166, 35, 41, 0.9));
   color: white;
   display: flex;
   flex-direction: column;
@@ -538,6 +549,14 @@ select {
   .nav-cta {
     margin-top: var(--spacing-sm);
   }
+  
+  .logo {
+    font-size: 1.25rem;
+  }
+  
+  .logo img {
+    height: 35px;
+  }
 }
 
 /* Responsive Design */
@@ -599,5 +618,13 @@ select {
   select,
   textarea {
     padding: 10px;
+  }
+  
+  .logo {
+    font-size: 1.1rem;
+  }
+  
+  .logo img {
+    height: 30px;
   }
 }

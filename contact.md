@@ -122,7 +122,7 @@ permalink: /contact/
                 <i class="fas fa-phone text-primary"></i>
                 <div>
                   <h4>Phone</h4>
-                  <p><a href="tel:+1-XXX-XXX-XXXX">+1 (XXX) XXX-XXXX</a></p>
+                  <p><a href="tel:+1-514-967-0145">+1 (514) 967-0145</a></p>
                   <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
                   <p>Saturday: 9:00 AM - 4:00 PM</p>
                 </div>
@@ -141,7 +141,7 @@ permalink: /contact/
                 <i class="fas fa-certificate text-primary"></i>
                 <div>
                   <h4>Licenses & Insurance</h4>
-                  <p>RBQ License: XXXX-XXXX-XX</p>
+                  <p>RBQ License: 5731-6820-01</p>
                   <p>Full liability & workers' compensation insurance</p>
                 </div>
               </div>
