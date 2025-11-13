@@ -46,5 +46,5 @@ The client now has a beautiful, functional kitchen that has increased their home
 
 ## Testimonial
 
-*"Atlas Construction exceeded our expectations on this kitchen renovation. Their attention to detail and commitment to quality is evident in every aspect of the finished project. The team was professional, clean, and completed the work on schedule."*
+*"Les Entrepreneurs Atlas exceeded our expectations on this kitchen renovation. Their attention to detail and commitment to quality is evident in every aspect of the finished project. The team was professional, clean, and completed the work on schedule."*
 **- Marie & Jean-Pierre G., Québec City**

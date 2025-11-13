@@ -1,5 +1,5 @@
 ---
-title: About Atlas Construction
+title: About Les Entrepreneurs Atlas
 layout: page
 permalink: /about/
 ---
@@ -8,7 +8,7 @@ permalink: /about/
 <section class="section">
   <div class="container">
     <div class="text-center mb-4">
-      <h1>About Atlas Construction</h1>
+      <h1>About Les Entrepreneurs Atlas</h1>
       <p class="text-muted">Your Trusted General Contractor in Québec</p>
     </div>
   </div>
@@ -20,7 +20,7 @@ permalink: /about/
     <div class="grid grid-2">
       <div>
         <h2>Our Story</h2>
-        <p>Atlas Construction is a licensed general contractor serving Quebec with pride and excellence. With years of experience in the construction industry, we have built our reputation on delivering quality craftsmanship, reliable service, and professional results.</p>
+        <p>Les Entrepreneurs Atlas is a licensed general contractor serving Quebec with pride and excellence. With years of experience in the construction industry, we have built our reputation on delivering quality craftsmanship, reliable service, and professional results.</p>
         
         <p>From residential renovations to commercial construction projects, our team of skilled professionals is committed to bringing your vision to life. We believe in clear communication, transparent pricing, and delivering projects on time and within budget.</p>
         
@@ -100,7 +100,7 @@ permalink: /about/
           <i class="fas fa-certificate"></i>
         </div>
         <h4>General Contractor License</h4>
-        <p>RBQ XXXX-XXXX-XX<br>Licensed to operate in all of Quebec</p>
+        <p>RBQ {{ site.company.rbq_license }}<br>Licensed to operate in all of Quebec</p>
       </div>
       
       <div>
@@ -123,7 +123,7 @@ permalink: /about/
       <a href="/contact/" class="btn btn-primary">
         <i class="fas fa-envelope"></i> Get Free Quote
       </a>
-      <a href="tel:+1-XXX-XXX-XXXX" class="btn btn-secondary">
+      <a href="tel:{{ site.company.phone }}" class="btn btn-secondary">
         <i class="fas fa-phone"></i> Call Now
       </a>
     </div>

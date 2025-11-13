@@ -47,5 +47,5 @@ The renovation increased employee satisfaction and productivity while providing 
 
 ## Testimonial
 
-*"Atlas Construction delivered an exceptional office transformation. Their project management skills and attention to our specific business needs were impressive. The finished space perfectly represents our company's culture."*
+*"Les Entrepreneurs Atlas delivered an exceptional office transformation. Their project management skills and attention to our specific business needs were impressive. The finished space perfectly represents our company's culture."*
 **- Sarah M., Operations Director**

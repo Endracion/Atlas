@@ -217,7 +217,7 @@ permalink: /services/
       <a href="/contact/" class="btn btn-secondary">
         <i class="fas fa-envelope"></i> Get Free Quote
       </a>
-      <a href="tel:+1-XXX-XXX-XXXX" class="btn btn-outline">
+      <a href="tel:{{ site.company.phone }}" class="btn btn-outline">
         <i class="fas fa-phone"></i> Call Now
       </a>
     </div>

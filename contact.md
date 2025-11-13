@@ -1,5 +1,5 @@
 ---
-title: Contact Atlas Construction
+title: Contact Les Entrepreneurs Atlas
 layout: page
 permalink: /contact/
 ---
@@ -113,7 +113,7 @@ permalink: /contact/
                 <i class="fas fa-map-marker-alt text-primary"></i>
                 <div>
                   <h4>Our Location</h4>
-                  <p>Québec, Canada</p>
+                  <p>{{ site.company.address }}</p>
                   <p>Serving Greater Montreal, Québec City, and surrounding areas</p>
                 </div>
               </div>
@@ -122,7 +122,7 @@ permalink: /contact/
                 <i class="fas fa-phone text-primary"></i>
                 <div>
                   <h4>Phone</h4>
-                  <p><a href="tel:+1-514-967-0145">+1 (514) 967-0145</a></p>
+                  <p><a href="tel:{{ site.company.phone }}">{{ site.company.phone }}</a></p>
                   <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
                   <p>Saturday: 9:00 AM - 4:00 PM</p>
                 </div>
@@ -132,7 +132,7 @@ permalink: /contact/
                 <i class="fas fa-envelope text-primary"></i>
                 <div>
                   <h4>Email</h4>
-                  <p><a href="mailto:info@atlas.ca">info@atlas.ca</a></p>
+                  <p><a href="mailto:{{ site.company.email }}">{{ site.company.email }}</a></p>
                   <p>We respond to emails within 24 hours</p>
                 </div>
               </div>
@@ -141,7 +141,7 @@ permalink: /contact/
                 <i class="fas fa-certificate text-primary"></i>
                 <div>
                   <h4>Licenses & Insurance</h4>
-                  <p>RBQ License: 5731-6820-01</p>
+                  <p>RBQ License: {{ site.company.rbq_license }}</p>
                   <p>Full liability & workers' compensation insurance</p>
                 </div>
               </div>
@@ -211,7 +211,7 @@ permalink: /contact/
   <div class="container text-center">
     <h2>Emergency Construction Services</h2>
     <p class="mb-3">Need urgent repairs or emergency construction services? We're here to help.</p>
-    <a href="tel:+1-XXX-XXX-XXXX" class="btn btn-secondary">
+    <a href="tel:{{ site.company.phone }}" class="btn btn-secondary">
       <i class="fas fa-exclamation-triangle"></i> Call Emergency Line
     </a>
   </div>

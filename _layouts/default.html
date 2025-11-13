@@ -7,7 +7,7 @@
   <meta name="description" content="{{ site.description }}">
   
   <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="/assets/images/AtlasLogoTransparent.ico">
   
   <!-- CSS Framework -->
   <link rel="stylesheet" href="/assets/css/main.css">
@@ -20,9 +20,7 @@
   <nav class="navbar">
     <div class="container">
       <a href="/" class="logo">
-        <img src="/assets/images/AtlasLogoTransparent.png" alt="{{ site.title }} Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
-        <span style="display:none;"><i class="fas fa-hammer"></i></span>
-        {{ site.title }}
+        <img src="/assets/images/AtlasLogoTransparent.png" alt="Les Entrepreneurs Atlas" class="header-logo">
       </a>
       
       <ul class="nav-menu">
@@ -34,8 +32,8 @@
       </ul>
       
       <div class="nav-cta">
-        <a href="tel:{{ site.phone | default: '+1-XXX-XXX-XXXX' }}" class="btn btn-secondary">
-          <i class="fas fa-phone"></i> {{ site.phone | default: 'Call Now' }}
+        <a href="tel:{{ site.company.phone }}" class="btn btn-secondary">
+          <i class="fas fa-phone"></i> {{ site.company.phone }}
         </a>
       </div>
     </div>
@@ -51,24 +49,24 @@
     <div class="container">
       <div class="grid grid-3">
         <div>
-          <h4>{{ site.title }}</h4>
+          <h4>{{ site.company.name }}</h4>
           <p>{{ site.description }}</p>
         </div>
         <div>
           <h4>Contact Info</h4>
           <p>
-            <i class="fas fa-map-marker-alt"></i> {{ site.address | default: 'Québec, Canada' }}<br>
-            <i class="fas fa-phone"></i> {{ site.phone | default: '+1-XXX-XXX-XXXX' }}<br>
-            <i class="fas fa-envelope"></i> {{ site.email | default: 'info@atlas.ca' }}
+            <i class="fas fa-map-marker-alt"></i> {{ site.company.address }}<br>
+            <i class="fas fa-phone"></i> <a href="tel:{{ site.company.phone }}" style="color: white;">{{ site.company.phone }}</a><br>
+            <i class="fas fa-envelope"></i> <a href="mailto:{{ site.company.email }}" style="color: white;">{{ site.company.email }}</a>
           </p>
         </div>
         <div>
           <h4>Licenses</h4>
-          <p>{{ site.license | default: 'Licensed General Contractor (RBQ 5731-6820-01)' }}</p>
+          <p>{{ site.company.license }}</p>
         </div>
       </div>
       <div class="text-center mt-3">
-        <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
+        <p>&copy; {{ site.time | date: '%Y' }} {{ site.company.name }}. All rights reserved.</p>
       </div>
     </div>
   </footer>

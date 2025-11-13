@@ -54,5 +54,5 @@ The client now has a stunning outdoor living space that extends their home's liv
 
 ## Testimonial
 
-*"Atlas Construction created our dream outdoor space! The quality of workmanship is exceptional, and the design perfectly fits our lifestyle. The patio has become the heart of our home for entertaining."*
+*"Les Entrepreneurs Atlas created our dream outdoor space! The quality of workmanship is exceptional, and the design perfectly fits our lifestyle. The patio has become the heart of our home for entertaining."*
 **- David & Lisa R., Laval**

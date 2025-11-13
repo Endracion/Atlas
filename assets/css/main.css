@@ -1,4 +1,4 @@
-/* Atlas Construction - Modern CSS Framework Foundation */
+/* Les Entrepreneurs Atlas - Modern CSS Framework Foundation */
 
 /* CSS Reset & Base Styles */
 * {
@@ -212,11 +212,17 @@ p {
 }
 
 .logo img {
-  height: 40px;
+  height: 80px;
   width: auto;
 }
 
 .nav-menu {
+/* Header Logo - Larger and more prominent */
+.header-logo {
+  height: 80px;
+  width: auto;
+  max-width: 300px;
+}
   display: flex;
   list-style: none;
   gap: var(--spacing-md);

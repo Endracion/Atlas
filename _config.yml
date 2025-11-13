@@ -1,23 +1,32 @@
-# Atlas Construction Jekyll Site Configuration
+# Les Entrepreneurs Atlas Jekyll Site Configuration
 
 # Site settings
-title: Les Entrepreneurs Atlas Inc.
+title: Les Entrepreneurs Atlas
 description: >-
-  Atlas Construction is a licensed general contractor (RBQ 5731-6820-01) delivering 
-  trusted renovations and outdoor work in Québec. From patio rebuilds to complete home 
+  Les Entrepreneurs Atlas is a licensed general contractor (RBQ 5731-6820-01) delivering 
+  trusted renovations and outdoor work in Montréal, Québec. From patio rebuilds to complete home 
   renovations, we bring quality craftsmanship to every project.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
-# Contact information
+# Centralized Business Information
+company:
+  name: "Les Entrepreneurs Atlas"
+  rbq_license: "5731-6820-01"
+  phone: "514-967-0145"
+  email: "lesentrepreneursatlas@gmail.com"
+  address: "Montréal, Québec, Canada"
+  license: "Licensed General Contractor (RBQ 5731-6820-01)"
+
+# Contact information (for backward compatibility)
 email: lesentrepreneursatlas@gmail.com
-phone: "+1-514-967-0145"
-address: "Québec, Canada"
-license: "Licensed General Contractor (RBQ: 5731-6820-01)"
+phone: "514-967-0145"
+address: "Montréal, Québec, Canada"
+license: "Licensed General Contractor (RBQ 5731-6820-01)"
 
 # Social media (can be updated later)
-twitter_username: 
-github_username: 
+facebook: 
+google: 
 
 # Build settings - Using our own CSS, minimal SCSS compilation
 sass:
@@ -49,6 +58,7 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - _pages/ # old directory - no longer needed
+  - _posts/ # not using posts/blog functionality
   
 # Keep only essential plugins
 plugins:
