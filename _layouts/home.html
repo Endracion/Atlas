@@ -1,0 +1,169 @@
+---
+layout: default
+---
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <h1>Professional Construction & Renovation Services in Québec</h1>
+    <p>Licensed general contractor delivering trusted renovations, landscaping, and outdoor work with quality craftsmanship for every project.</p>
+    
+    <div class="hero-cta">
+      <a href="/contact/" class="btn btn-primary">
+        <i class="fas fa-tools"></i> Get Free Quote
+      </a>
+      <a href="tel:+1-XXX-XXX-XXXX" class="btn btn-outline">
+        <i class="fas fa-phone"></i> Call Now
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section class="section">
+  <div class="container">
+    <div class="section-title">
+      <h2>Our Services</h2>
+      <p>Comprehensive construction and renovation solutions for your home</p>
+    </div>
+    
+    <div class="grid grid-3">
+      <div class="card service-card">
+        <div class="service-icon">
+          <i class="fas fa-home"></i>
+        </div>
+        <h3>Home Renovations</h3>
+        <p>Complete home renovations, kitchen remodels, bathroom updates, and interior transformations with quality craftsmanship.</p>
+        <a href="/services/#renovations" class="btn btn-outline">Learn More</a>
+      </div>
+      
+      <div class="card service-card">
+        <div class="service-icon">
+          <i class="fas fa-tree"></i>
+        </div>
+        <h3>Landscaping</h3>
+        <p>Professional landscaping services, patio design, outdoor living spaces, and garden construction projects.</p>
+        <a href="/services/#landscaping" class="btn btn-outline">Learn More</a>
+      </div>
+      
+      <div class="card service-card">
+        <div class="service-icon">
+          <i class="fas fa-hammer"></i>
+        </div>
+        <h3>General Contracting</h3>
+        <p>Licensed general contractor services, project management, permits handling, and construction oversight.</p>
+        <a href="/services/#contracting" class="btn btn-outline">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us Section -->
+<section class="section bg-light">
+  <div class="container">
+    <div class="section-title">
+      <h2>Why Choose Atlas?</h2>
+      <p>Your trusted partner for construction projects in Québec</p>
+    </div>
+    
+    <div class="grid grid-3">
+      <div class="text-center">
+        <div class="service-icon">
+          <i class="fas fa-certificate"></i>
+        </div>
+        <h4>Licensed & Insured</h4>
+        <p>Licensed general contractor (RBQ XXXX-XXXX-XX) with full liability insurance coverage for your peace of mind.</p>
+      </div>
+      
+      <div class="text-center">
+        <div class="service-icon">
+          <i class="fas fa-award"></i>
+        </div>
+        <h4>Quality Workmanship</h4>
+        <p>Commitment to excellence with quality materials, skilled craftsmanship, and attention to detail.</p>
+      </div>
+      
+      <div class="text-center">
+        <div class="service-icon">
+          <i class="fas fa-clock"></i>
+        </div>
+        <h4>On-Time Delivery</h4>
+        <p>Reliable project timelines and transparent communication throughout every phase of your project.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Latest Projects Section -->
+<section class="section">
+  <div class="container">
+    <div class="section-title">
+      <h2>Recent Projects</h2>
+      <p>See our latest construction and renovation work</p>
+    </div>
+    
+    <div class="grid grid-3">
+      {% for project in site.pages %}
+        {% if project.layout == "project" %}
+        <div class="card">
+          {% if project.thumbnail %}
+          <img src="{{ project.thumbnail }}" alt="{{ project.title }}" style="width: 100%; height: 200px; object-fit: cover;">
+          {% endif %}
+          <div class="card-body">
+            <h4>{{ project.title }}</h4>
+            <p class="text-muted"><i class="fas fa-map-marker-alt"></i> {{ project.location }}</p>
+            <p>{{ project.content | strip_html | truncatewords: 15 }}</p>
+            <a href="{{ project.url }}" class="btn btn-outline">View Project</a>
+          </div>
+        </div>
+        {% endif %}
+      {% endfor %}
+      
+      <!-- Placeholder if no projects exist -->
+      {% if site.pages.size == 0 %}
+      <div class="card">
+        <div class="card-body text-center">
+          <h4>Residential Renovation</h4>
+          <p class="text-muted"><i class="fas fa-map-marker-alt"></i> Québec City, QC</p>
+          <p>Complete kitchen and bathroom renovation with modern finishes and quality craftsmanship.</p>
+          <a href="/portfolio/" class="btn btn-outline">View All Projects</a>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-body text-center">
+          <h4>Landscaping Project</h4>
+          <p class="text-muted"><i class="fas fa-map-marker-alt"></i> Montreal, QC</p>
+          <p>Professional patio construction with stone work and outdoor living space design.</p>
+          <a href="/portfolio/" class="btn btn-outline">View All Projects</a>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card-body text-center">
+          <h4>Commercial Construction</h4>
+          <p class="text-muted"><i class="fas fa-map-marker-alt"></i> Laval, QC</p>
+          <p>Complete office space renovation with modern design and professional finishes.</p>
+          <a href="/portfolio/" class="btn btn-outline">View All Projects</a>
+        </div>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<!-- Contact CTA Section -->
+<section class="section bg-primary text-white">
+  <div class="container text-center">
+    <h2>Ready to Start Your Project?</h2>
+    <p class="mb-3">Contact us today for a free consultation and detailed quote for your construction project.</p>
+    <div class="hero-cta">
+      <a href="/contact/" class="btn btn-secondary">
+        <i class="fas fa-envelope"></i> Get Free Quote
+      </a>
+      <a href="tel:+1-XXX-XXX-XXXX" class="btn btn-outline">
+        <i class="fas fa-phone"></i> Call Now
+      </a>
+    </div>
+  </div>
+</section>
