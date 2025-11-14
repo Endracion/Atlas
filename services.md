@@ -208,18 +208,5 @@ permalink: /services/
   </div>
 </section>
 
-<!-- Contact CTA -->
-<section class="section bg-primary text-white">
-  <div class="container text-center">
-    <h2>Ready to Get Started?</h2>
-    <p class="mb-3">Contact us today for your free consultation and detailed project quote</p>
-    <div class="hero-cta">
-      <a href="/contact/" class="btn btn-secondary">
-        <i class="fas fa-envelope"></i> Get Free Quote
-      </a>
-      <a href="tel:{{ site.company.phone }}" class="btn btn-outline">
-        <i class="fas fa-phone"></i> Call Now
-      </a>
-    </div>
-  </div>
-</section>
+<!-- Services CTA -->
+{% include services-cta.html %}

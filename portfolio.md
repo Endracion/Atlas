@@ -100,6 +100,9 @@ permalink: /portfolio/
       <a href="/contact/" class="btn btn-primary">
         <i class="fas fa-envelope"></i> Get Free Quote
       </a>
+      <a href="tel:{{ site.company.phone }}" class="btn btn-secondary">
+        <i class="fas fa-phone"></i> Call Now
+      </a>
       <a href="/services/" class="btn btn-secondary">
         <i class="fas fa-tools"></i> View Services
       </a>

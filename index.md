@@ -24,3 +24,5 @@ Ready to start your project? Contact us for a free consultation:
 - Quality craftsmanship and reliable service
 - Transparent pricing and communication
 - Serving clients throughout Québec
+
+{% include services-cta.html %}
