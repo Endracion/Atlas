@@ -567,6 +567,37 @@ select {
 
 .text-primary { color: var(--primary-color); }
 .text-secondary { color: var(--secondary-color); }
+/* Footer Styles */
+footer {
+  padding: var(--spacing-sm) 0;
+  background-color: var(--primary-color);
+  color: var(--text-white);
+}
+
+footer h4 {
+  color: #2c2c2c;
+  margin-bottom: var(--spacing-sm);
+}
+
+footer a {
+  color: #2c2c2c;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+footer a:hover {
+  color: var(--text-white);
+}
+
+footer p {
+  color: var(--text-white);
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Override white text color for footer icons */
+footer i {
+  color: #2c2c2c !important;
+}
 .text-muted { color: var(--text-light); }
 
 /* Navigation Mobile Styles */
