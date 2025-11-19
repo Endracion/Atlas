@@ -23,7 +23,9 @@ layout: compress
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="renotheme-theme">
+{% unless page.url == '/' %}
 <div class="boxed-container">
+{% endunless %}
 
 	<!-- Top Bar -->
 	<div class="renotheme-top">
@@ -148,6 +150,7 @@ layout: compress
 
 	<!-- Main Title Section (only show if not home page) -->
 	{% unless page.url == '/' %}
+	<div class="boxed-container">
 	<div class="main-title" style="background-color: #f2f2f2">
 		<div class="container">
 			<h1 class="main-title__primary">{{ page.title | default: layout.title }}</h1>
@@ -166,6 +169,11 @@ layout: compress
 	</div>
 	{% endunless %}
 
+	<!-- Hero Carousel Section (only show on home page) -->
+	{% if page.url == '/' %}
+	{% include carousel.html %}
+	{% endif %}
+
 	<!-- Master Container -->
 	<div class="master-container">
 		<div class="container">
@@ -176,6 +184,9 @@ layout: compress
 			</div>
 		</div>
 	</div>
+	{% unless page.url == '/' %}
+	</div><!-- end boxed-container for non-home pages -->
+	{% endunless %}
 
 	<!-- Footer -->
 	<footer>
@@ -231,7 +242,9 @@ layout: compress
 			</div>
 		</div>
 	</footer>
+{% unless page.url == '/' %}
 </div>
+{% endunless %}
 
 <!-- JavaScript Files -->
 <script type="text/javascript" src="/assets/js/renotheme/jquery.min.js"></script>
