@@ -7,7 +7,7 @@
 /* RenoTheme Variables - Adapted to Atlas */
 :root {
   --renotheme-primary: #be2c33; /* Atlas red */
-  --renotheme-secondary: #f7c51e; /* RenoTheme yellow */
+  --renotheme-secondary: #be2c33; /* RenoTheme yellow */
   --renotheme-dark: #454545;
   --renotheme-light: #f2f2f2;
   --renotheme-text-dark: #333333;
@@ -169,10 +169,67 @@ body.renotheme-theme {
     float: right;
   }
 }
+
+/* Header widget responsive behavior */
+@media (max-width: 991px) {
+  .header-widgets-desktop {
+    display: none !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .header-widgets:not(.header-widgets-desktop) {
+    display: none !important;
+  }
+}
 @media (min-width: 1200px) {
   .header-widgets {
     padding: 28px 0;
     float: right;
+  }
+}
+
+/* Header Widgets Flexbox Layout for Desktop */
+@media (min-width: 992px) {
+  .header-widgets {
+    padding: 14px 0 28px 0;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .header-widgets .widget {
+    flex: 0 0 auto;
+    margin-left: 15px;
+  }
+
+  .header-widgets .widget:first-child {
+    margin-left: 0;
+  }
+
+  .header-widgets .widget-icon-box .icon-box {
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+
+  .header-widgets .widget-icon-box .icon-box > .fa {
+    flex-shrink: 0;
+    margin-right: 10px;
+  }
+
+  .header-widgets .widget-icon-box .icon-box__text {
+    flex: 1;
+  }
+
+  .header-widgets .widget-social-icons {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-widgets .widget-social-icons .social-icons__link {
+    margin: 0 4px;
   }
 }
 
@@ -185,20 +242,7 @@ body.renotheme-theme {
   color: #999999;
 }
 
-@media (min-width: 992px) {
-  .icon-box {
-    float: left;
-    padding: 8px 0;
-    width: 210px;
-    border-bottom: 0;
-    border-right: 1px solid rgba(250, 250, 250, 0.12);
-    text-align: left;
-    margin-left: 15px;
-  }
-}
-
 .icon-box > .fa {
-  float: left;
   font-size: 40px;
   margin-right: 10px;
   color: var(--renotheme-secondary);
@@ -208,7 +252,7 @@ body.renotheme-theme {
   margin: 4px 0 0 0;
   font-size: 14px;
   font-weight: bold;
-  color: #dddddd;
+  color: #dddddd !important;
 }
 
 .icon-box__subtitle {
@@ -571,6 +615,44 @@ body.renotheme-theme {
   }
 }
 
+/* Bootstrap Responsive Utilities */
+.hidden-xs {
+  display: none !important;
+}
+
+.hidden-sm {
+  display: none !important;
+}
+
+.hidden-md {
+  display: none !important;
+}
+
+.hidden-lg {
+  display: none !important;
+}
+
+@media (min-width: 768px) {
+  .hidden-xs {
+    display: block !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .hidden-xs,
+  .hidden-sm {
+    display: block !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hidden-xs,
+  .hidden-sm,
+  .hidden-md {
+    display: block !important;
+  }
+}
+
 /* Responsive Design */
 @media (max-width: 991px) {
   .navigation--main .sub-menu {
@@ -613,6 +695,54 @@ body.renotheme-theme {
   }
 
   .main-title__secondary::before {
+    display: none;
+  }
+}
+
+/* Navbar Toggle Button */
+.navbar-toggle {
+  background: var(--renotheme-secondary);
+  border-radius: 2px;
+  padding: 10px 12px;
+  margin: 10px 0;
+  transition: all 200ms ease-out;
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: 480px) {
+  .navbar-toggle { margin: 34px 0; }
+}
+
+.navbar-toggle:hover {
+  background: #eeb908;
+}
+
+.navbar-toggle .icon-bar {
+  background: var(--renotheme-text-dark);
+  width: 18px;
+  height: 3px;
+  display: block;
+  border-radius: 1px;
+}
+
+.navbar-toggle .icon-bar + .icon-bar {
+  margin-top: 3px;
+}
+
+.navbar-toggle:focus {
+  outline: none;
+}
+
+.navbar-toggle__icon-bar {
+  vertical-align: middle;
+  display: inline-block;
+  height: 18px;
+}
+
+/* Hide navbar toggle on desktop */
+@media (min-width: 992px) {
+  .navbar-toggle {
     display: none;
   }
 }
