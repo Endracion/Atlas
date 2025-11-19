@@ -1,9 +1,9 @@
 ---
 title: Commercial Office Renovation
-layout: project
+layout: renotheme-project
 permalink: /portfolio/office-renovation/
 location: Montreal, QC
-thumbnail: /assets/images/office-renovation.jpg
+thumbnail: /assets/images/renotheme/demo/content/service3.jpg
 year: 2024
 duration: 12 weeks
 cost: $75,000

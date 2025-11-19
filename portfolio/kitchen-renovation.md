@@ -1,9 +1,9 @@
 ---
 title: Complete Kitchen Renovation
-layout: project
+layout: renotheme-project
 permalink: /portfolio/kitchen-renovation/
 location: Québec City, QC
-thumbnail: /assets/images/kitchen-renovation.jpg
+thumbnail: /assets/images/renotheme/demo/content/service1.jpg
 year: 2024
 duration: 8 weeks
 cost: $45,000

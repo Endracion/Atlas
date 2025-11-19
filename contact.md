@@ -1,7 +1,8 @@
 ---
 title: Contact Les Entrepreneurs Atlas
-layout: page
+layout: renotheme-page
 permalink: /contact/
+subtitle: "Get In Touch With Our Team"
 ---
 
 <!-- Contact Hero -->

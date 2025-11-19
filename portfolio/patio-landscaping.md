@@ -1,9 +1,9 @@
 ---
 title: Outdoor Patio & Landscaping Project
-layout: project
+layout: renotheme-project
 permalink: /portfolio/patio-landscaping/
 location: Laval, QC
-thumbnail: /assets/images/patio-landscaping.jpg
+thumbnail: /assets/images/renotheme/demo/content/service4.jpg
 year: 2024
 duration: 6 weeks
 cost: $28,000

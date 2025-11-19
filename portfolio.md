@@ -1,7 +1,8 @@
 ---
 title: Our Portfolio
-layout: page
+layout: renotheme-page
 permalink: /portfolio/
+subtitle: "Showcasing Our Construction Expertise"
 ---
 
 <!-- Portfolio Hero -->

@@ -1,7 +1,8 @@
 ---
 title: About Les Entrepreneurs Atlas
-layout: page
+layout: renotheme-page
 permalink: /about/
+subtitle: "Your Trusted General Contractor in Québec"
 ---
 
 <!-- About Hero Section -->

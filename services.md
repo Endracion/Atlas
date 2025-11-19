@@ -1,7 +1,8 @@
 ---
 title: Our Services
-layout: page
+layout: renotheme-page
 permalink: /services/
+subtitle: "Comprehensive Construction Solutions"
 ---
 
 <!-- Services Hero -->

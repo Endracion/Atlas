@@ -45,6 +45,12 @@ collections:
 markdown: kramdown
 highlighter: rouge
 
+# RenoTheme Settings
+renotheme:
+  layout_style: "wide"   # "wide" or "boxed"
+  navigation_position: "sticky"  # "static" or "sticky"
+  color_skin: "atlas"    # "atlas", "blue", "green", etc.
+
 # Exclude from processing - reduce processing overhead
 exclude:
   - .sass-cache/
@@ -59,7 +65,7 @@ exclude:
   - vendor/ruby/
   - _pages/ # old directory - no longer needed
   - _posts/ # not using posts/blog functionality
-  
+
 # Keep only essential plugins
 plugins:
   - jekyll-feed

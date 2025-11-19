@@ -1,0 +1,56 @@
+---
+layout: renotheme-page
+---
+
+<div class="renotheme-master-container">
+	<div class="renotheme-container">
+		<div class="row">
+			<main class="col-xs-12" role="main">
+				<div class="row">
+					<div class="col-md-12">
+						<article class="hentry">
+							<div class="project-post">
+								{% if page.thumbnail %}
+								<img src="{{ page.thumbnail }}" alt="{{ page.title }}" class="img-responsive wp-post-image" />
+								{% else %}
+								<img src="/assets/images/renotheme/demo/content/service1.jpg" alt="{{ page.title }}" class="img-responsive wp-post-image" />
+								{% endif %}
+								<div class="project-content">
+									<div class="inner-project">
+										<h1>{{ page.title }}</h1>
+										{% if page.location %}
+										<span><i class="fa fa-map-marker"></i> {{ page.location }}</span>
+										{% endif %}
+										{% if page.year %}
+										<span><i class="fa fa-calendar"></i> {{ page.year }}</span>
+										{% endif %}
+										{% if page.cost %}
+										<span><i class="fa fa-dollar-sign"></i> {{ page.cost }}</span>
+										{% endif %}
+									</div>
+								</div>
+							</div>
+
+							<div class="renotheme-spacer"></div>
+
+							<div class="project-details">
+								{{ content }}
+							</div>
+
+							<div class="renotheme-spacer-big"></div>
+
+							<div class="text-center">
+								<a href="/portfolio/" class="renotheme-btn renotheme-btn-primary">
+									<i class="fa fa-arrow-left"></i> Back to Portfolio
+								</a>
+								<a href="/contact/" class="renotheme-btn renotheme-btn-primary" style="margin-left: 10px;">
+									<i class="fa fa-envelope"></i> Request Similar Project
+								</a>
+							</div>
+						</article>
+					</div>
+				</div>
+			</main>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,245 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8"/>
+	<title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="description" content="{{ site.description }}"/>
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/x-icon" href="/assets/images/AtlasLogoTransparent.ico">
+
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Montserrat:700">
+
+	<!-- CSS Files -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+	<link rel="stylesheet" href="/assets/css/renotheme.css">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="renotheme-theme">
+<div class="boxed-container">
+
+	<!-- Top Bar -->
+	<div class="renotheme-top">
+		<div class="renotheme-container">
+			<div class="row">
+				<div class="col-xs-12 col-md-6">
+					<div class="renotheme-top__left">{{ site.company.name }} - {{ site.company.license }}</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Header -->
+	<header class="header">
+		<div class="container">
+			<div class="logo">
+				<a href="/">
+					<img src="/assets/images/AtlasLogoTransparent.png" alt="{{ site.company.name }}" class="img-responsive"/>
+				</a>
+			</div>
+			<div class="header-widgets  header-widgets-desktop  hidden-xs  hidden-sm">
+				<div class="widget  widget-icon-box">
+					<div class="icon-box">
+						<i class="fa  fa-phone  fa-3x"></i>
+						<div class="icon-box__text">
+							<h4 class="icon-box__title">{{ site.company.phone }}</h4>
+							<span class="icon-box__subtitle">{{ site.company.email }}</span>
+						</div>
+					</div>
+				</div>
+				<div class="widget  widget-icon-box">
+					<div class="icon-box">
+						<i class="fa fa-home fa-3x"></i>
+						<div class="icon-box__text">
+							<h4 class="icon-box__title">{{ site.company.address | split: ', ' | first }}</h4>
+							<span class="icon-box__subtitle">{{ site.company.address | split: ', ' | last }}</span>
+						</div>
+					</div>
+				</div>
+				<div class="widget  widget-icon-box">
+					<div class="icon-box">
+						<i class="fa  fa-clock-o  fa-3x"></i>
+						<div class="icon-box__text">
+							<h4 class="icon-box__title">Mon - Sat 8.00 - 18.00</h4>
+							<span class="icon-box__subtitle">Sunday CLOSED</span>
+						</div>
+					</div>
+				</div>
+				<div class="widget  widget-social-icons">
+					<a class="social-icons__link" href="#" target="_blank"><i class="fa  fa-facebook"></i></a>
+					<a class="social-icons__link" href="#" target="_blank"><i class="fa  fa-twitter"></i></a>
+					<a class="social-icons__link" href="#" target="_blank"><i class="fa  fa-youtube"></i></a>
+				</div>
+			</div>
+			<!-- Toggle Button for Mobile Navigation -->
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#buildpress-navbar-collapse">
+				<span class="navbar-toggle__text">MENU</span>
+				<span class="navbar-toggle__icon-bar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</span>
+			</button>
+		</div>
+		<div class="sticky-offset  js-sticky-offset"></div>
+		<div class="container">
+			<div class="navigation">
+				<div class="collapse  navbar-collapse" id="buildpress-navbar-collapse">
+					<ul id="menu-main-menu" class="navigation--main">
+						<li class="{% if page.url == '/' %}current-menu-item{% endif %}"><a href="/">HOME</a></li>
+						<li class="{% if page.url contains '/portfolio' %}current-menu-item{% endif %}"><a href="/portfolio/">PORTFOLIO</a></li>
+						<li class="menu-item-has-children {% if page.url contains '/services' %}current-menu-item{% endif %}">
+							<a href="/services/">OUR SERVICES</a>
+							<ul class="sub-menu">
+								<li><a href="/services/#renovations">Home Renovations</a></li>
+								<li><a href="/services/#landscaping">Landscaping</a></li>
+								<li><a href="/services/#contracting">General Contracting</a></li>
+							</ul>
+						</li>
+						<li class="{% if page.url contains '/about' %}current-menu-item{% endif %}"><a href="/about/">ABOUT US</a></li>
+						<li class="{% if page.url contains '/contact' %}current-menu-item{% endif %}"><a href="/contact/">CONTACT</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="header-widgets  hidden-md  hidden-lg">
+				<div class="widget  widget-icon-box">
+					<div class="icon-box">
+						<i class="fa  fa-phone  fa-3x"></i>
+						<div class="icon-box__text">
+							<h4 class="icon-box__title">{{ site.company.phone }}</h4>
+							<span class="icon-box__subtitle">{{ site.company.email }}</span>
+						</div>
+					</div>
+				</div>
+				<div class="widget  widget-icon-box">
+					<div class="icon-box">
+						<i class="fa  fa-home  fa-3x"></i>
+						<div class="icon-box__text">
+							<h4 class="icon-box__title">{{ site.company.address | split: ', ' | first }}</h4>
+							<span class="icon-box__subtitle">{{ site.company.address | split: ', ' | last }}</span>
+						</div>
+					</div>
+				</div>
+				<div class="widget  widget-icon-box">
+					<div class="icon-box">
+						<i class="fa  fa-clock-o  fa-3x"></i>
+						<div class="icon-box__text">
+							<h4 class="icon-box__title">Mon - Sat 8.00 - 18.00</h4>
+							<span class="icon-box__subtitle">Sunday CLOSED</span>
+						</div>
+					</div>
+				</div>
+				<div class="widget  widget-social-icons">
+					<a class="social-icons__link" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+					<a class="social-icons__link" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+					<a class="social-icons__link" href="#" target="_blank"><i class="fa fa-youtube"></i></a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Main Title Section (only show if not home page) -->
+	{% unless page.url == '/' %}
+	<div class="main-title" style="background-color: #f2f2f2">
+		<div class="container">
+			<h1 class="main-title__primary">{{ page.title | default: layout.title }}</h1>
+			<h3 class="main-title__secondary">{{ page.subtitle | default: 'Professional Construction Services' }}</h3>
+		</div>
+	</div>
+
+	<!-- Breadcrumbs -->
+	<div class="breadcrumbs">
+		<div class="container">
+			<span typeof="v:Breadcrumb"><a title="Go to {{ site.company.name }}." href="/" class="home">{{ site.company.name }}</a></span>
+			{% if page.url != '/' %}
+			<span typeof="v:Breadcrumb"><span>{{ page.title | default: layout.title }}</span></span>
+			{% endif %}
+		</div>
+	</div>
+	{% endunless %}
+
+	<!-- Master Container -->
+	<div class="master-container">
+		<div class="container">
+			<div class="row">
+				<main class="col-xs-12" role="main">
+					{{ content }}
+				</main>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer>
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-4">
+						<div class="widget widget_text push-down-30">
+							<h6 class="footer__headings">ABOUT US</h6>
+							<div class="textwidget">
+								<img src="/assets/images/AtlasLogoTransparent.png" alt="{{ site.company.name }}" width="218" height="45" />
+								<br><br>
+								{{ site.description }}
+								<br><br>
+								<strong><a href="/about/" class="read-more">READ MORE</a></strong>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-4">
+						<div class="widget widget_nav_menu push-down-30">
+							<h6 class="footer__headings">NAVIGATION</h6>
+							<div class="menu-top-menu-container">
+								<ul id="menu-top-menu-1" class="menu">
+									<li><a href="/services/">Services</a></li>
+									<li><a href="/portfolio/">Portfolio</a></li>
+									<li><a href="/about/">About Us</a></li>
+									<li><a href="/contact/">Contact</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-4">
+						<div class="widget widget_text push-down-30">
+							<h6 class="footer__headings">GET IN TOUCH</h6>
+							<div class="textwidget">
+								Ready to start your construction project? Contact us today for a free consultation and quote.
+								<br><br>
+								<a class="btn btn-primary" href="/contact/">CONTACT US</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="footer-bottom__left">
+					{{ site.company.name }} - Licensed General Contractor
+				</div>
+				<div class="footer-bottom__right">
+					&copy; {{ site.time | date: '%Y' }} <strong>{{ site.company.name }}</strong>. All rights reserved.
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+
+<!-- JavaScript Files -->
+<script type="text/javascript" src="/assets/js/renotheme/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/js/renotheme/modernizr.custom.24530.js"></script>
+<script type="text/javascript" src="/assets/js/renotheme/sticky_navbar.js"></script>
+<script type="text/javascript" src="/assets/js/renotheme/main.min.js"></script>
+
+
+</body>
+</html>
