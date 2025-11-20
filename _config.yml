@@ -25,8 +25,8 @@ address: "Montréal, Québec, Canada"
 license: "Licensed General Contractor (RBQ 5731-6820-01)"
 
 # Social media (can be updated later)
-facebook: 
-google: 
+facebook: https://www.facebook.com/Les-Entrepreneurs-Atlas-Inc-1246325508792695/
+google: https://maps.app.goo.gl/WeeMaaggA2aWNqwp6
 
 # Build settings - Using our own CSS, minimal SCSS compilation
 sass:
