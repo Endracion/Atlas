@@ -30,6 +30,24 @@
   font-weight: 900;
 }
 
+/* Button-specific FontAwesome icon colors */
+button .fa, button .far, button .fas, button .fab {
+  color: var(--renotheme-light);
+}
+
+button:hover .fa, button:hover .far, button:hover .fas, button:hover .fab {
+  color: var(--renotheme-primary);
+}
+
+/* Button-specific FontAwesome icon colors */
+.renotheme-btn .fa, .renotheme-btn .far, .renotheme-btn .fas, .renotheme-btn .fab {
+  color: var(--renotheme-light);
+}
+
+.renotheme-btn:hover .fa, .renotheme-btn:hover .far, .renotheme-btn:hover .fas, .renotheme-btn:hover .fab {
+  color: var(--renotheme-primary);
+}
+
 /* RenoTheme Variables - Adapted to Atlas */
 :root {
   --renotheme-primary: #be2c33; /* Atlas red */
