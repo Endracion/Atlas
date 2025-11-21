@@ -162,12 +162,16 @@ body.renotheme-theme {
 .header {
   background-color: var(--renotheme-dark);
   position: relative;
-  overflow: hidden;
 }
 
 .logo {
   float: left;
   max-width: 50%;
+  width: auto;
+}
+
+.logo img {
+  height: 80px;
   width: auto;
 }
 
@@ -178,7 +182,10 @@ body.renotheme-theme {
     max-width: 200px;
     position: relative;
     top: 50%;
-    transform: translateY(-50%);
+  }
+  .logo img {
+  height: 60px;
+  width: auto;
   }
 }
 
@@ -844,7 +851,6 @@ body.renotheme-theme {
   transition: all 200ms ease-out;
   border: none !important;
   cursor: pointer;
-  position: absolute;
   top: 50%;
   right: -15px;
   transform: translateY(-50%);

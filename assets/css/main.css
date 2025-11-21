@@ -461,21 +461,6 @@ p {
   padding: var(--spacing-sm);
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-sm);
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--primary-color);
-  text-decoration: none;
-}
-
-.logo img {
-  height: 80px;
-  width: auto;
-}
-
 .nav-menu {
 /* Header Logo - Larger and more prominent */
 .header-logo {
@@ -881,15 +866,6 @@ footer i {
     margin-top: var(--spacing-sm);
   }
   
-  .logo {
-    font-size: 1.25rem;
-  }
-  
-  .logo img {
-    height: 35px;
-  }
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero h1 {
@@ -951,11 +927,5 @@ footer i {
     padding: 10px;
   }
   
-  .logo {
-    font-size: 1.1rem;
-  }
-  
-  .logo img {
-    height: 30px;
-  }
+}
 }
