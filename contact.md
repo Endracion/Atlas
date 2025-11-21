@@ -212,7 +212,7 @@ subtitle: "Get In Touch With Our Team"
   <div class="container text-center">
     <h2>Emergency Construction Services</h2>
     <p class="mb-3">Need urgent repairs or emergency construction services? We're here to help.</p>
-    <a href="tel:{{ site.company.phone }}" class="btn btn-secondary">
+    <a href="tel:{{ site.company.phone }}" class="renotheme-btn renotheme-btn-secondary">
       <i class="fas fa-exclamation-triangle"></i> Call Emergency Line
     </a>
   </div>

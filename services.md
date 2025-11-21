@@ -101,18 +101,5 @@ subtitle: "WHAT WE CAN DO FOR YOU"
         </ul>
       </div>
     </div>
-    <div class="widget widget-brochure-box  push-down-30">
-      <h4 class="sidebar__headings">Brochures</h4>
-      <a class="brochure-box" href="#" target="_blank">
-        <i class="fa  fa-file-pdf-o"></i>
-        <h5 class="brochure-box__text">Download .PDF</h5>
-      </a>
-    </div>
-    <div class="widget  widget-brochure-box  push-down-30">
-      <a class="brochure-box" href="#" target="_blank">
-        <i class="fa  fa-file-word-o"></i>
-        <h5 class="brochure-box__text">Download .DOC</h5>
-      </a>
-    </div>
   </div>
 </div>
