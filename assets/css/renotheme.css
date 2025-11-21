@@ -142,6 +142,7 @@ body.renotheme-theme {
   .logo {
     float: left;
     max-width: 218px;
+    padding-top: 14px;
   }
 }
 
@@ -228,6 +229,12 @@ body.renotheme-theme {
     flex: 1;
   }
 
+  .header-widgets .widget-social-icons {
+    display: flex;
+    align-items: center;
+    padding: 12px 0 12px 15px;
+  }
+
   .header-widgets .widget-social-icons .social-icons__link {
     margin: 0 4px;
   }
@@ -257,6 +264,8 @@ body.renotheme-theme {
   font-size: 14px;
   font-weight: bold;
   color: #dddddd !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 .icon-box__subtitle {
