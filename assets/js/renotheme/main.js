@@ -68,20 +68,21 @@ $( document ).ready(function() {
 			return false;
 		});
 		
-		// Isotope Filter 
-		$filter.find('li').click(function(){
-			var selector = $(this).find('a').attr('data-filter');
+		// Isotope Filter
+		$filter.find('a').click(function(e){
+			e.preventDefault();
+			var selector = $(this).attr('data-filter');
 
 			try {
-				$container.isotope({ 
+				$container.isotope({
 					filter	: selector,
-					 itemSelector: '.project-post',
-					
+					itemSelector: '.project-post',
+
 					animationOptions: {
 						duration: 750,
 						easing	: 'linear',
 						queue	: false,
-						
+
 					}
 				});
 			} catch(err) {
@@ -89,11 +90,7 @@ $( document ).ready(function() {
 			}
 			return false;
 		});
-		$('.filter li').click(function(){
-			$('.filter li').removeClass('active');
-			$(this).addClass('active');
-		});
-		 $('.filter a').click(function(){
+		$('.filter a').click(function(){
 			$('.filter li').removeClass('active');
 			$(this).parent().addClass('active');
 		});
