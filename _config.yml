@@ -36,9 +36,9 @@ sass:
 # Include assets and other directories in Jekyll processing
 include: ['assets', 'images']
 
-# Collections for portfolio
+# Collections for projects
 collections:
-  portfolio:
+  projects:
     output: true
 
 # Site-wide settings
@@ -63,6 +63,7 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - backups/** # backup files - prevent conflicts (recursive)
   - _pages/ # old directory - no longer needed
   - _posts/ # not using posts/blog functionality
 

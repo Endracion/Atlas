@@ -1,7 +1,7 @@
 ---
 title: Our Services
 layout: renotheme-page
-permalink: /services/
+permalink: /services2/
 subtitle: "Comprehensive Construction Solutions"
 ---
 

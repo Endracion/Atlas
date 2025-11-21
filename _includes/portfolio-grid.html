@@ -1,0 +1,39 @@
+<div class="portfolio-mini-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="portfolio-container">
+          <div id="options" class="text-left">
+            <ul id="filters" class="filter">
+              <li class="active"><a href="#" data-filter="*">All Projects</a></li>
+              <li><a href="#" data-filter=".filter-buildings">Buildings</a></li>
+              <li><a href="#" data-filter=".filter-interior-design">Interior Design</a></li>
+              <li><a href="#" data-filter=".filter-isolation">Isolation</a></li>
+              <li><a href="#" data-filter=".filter-plumbing">Plumbing</a></li>
+              <li><a href="#" data-filter=".filter-tiling">Tiling</a></li>
+            </ul>
+          </div>
+
+          <div id="portfolio-content" class="projects-container row">
+            {% for project in site.projects %}
+            <div class="project-post {% for category in project.categories %}filter-{{ category }} {% endfor %}col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <img src="{{ project.thumbnail }}" alt="{{ project.title }}" />
+              <div class="project-content">
+                <div class="inner-project">
+                  <h3>{{ project.title }}</h3>
+                  {% if project.link %}
+                  <a href="{{ project.link }}" class="project-link">{{ project.link_text | default: "View Project" }}</a>
+                  {% else %}
+                  <a href="{{ project.url }}" class="project-link">View Project</a>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>

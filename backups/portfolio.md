@@ -1,7 +1,7 @@
 ---
 title: Our Portfolio
 layout: renotheme-page
-permalink: /portfolio/
+permalink: /portfolio2/
 subtitle: "Showcasing Our Construction Expertise"
 ---
 

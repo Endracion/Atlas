@@ -1350,17 +1350,16 @@ label.error  {background:red; color:#fff; border-radius:4px; padding:4px 6px}
 .wpcf7 .wpcf7-not-valid-tip { margin: 0 0 5px 0; }
 
 /* Portfolio Styles */
-.portfolio-mini-wrapper { background: var(--renotheme-dark); }
+.portfolio-mini-wrapper { background: var(--renotheme-light); }
 .portfolio-mini-wrapper.portfolio-light { background: none; }
 
-#options { background: #333333; text-align: center; margin-bottom: 30px; }
+#options { background: var(--renotheme-light); text-align: center; margin-bottom: 30px; }
 
 #filters { text-align: center; padding-left: 0; }
 
 @media (min-width: 992px) {
   #filters li.active, #filters li:hover {
-    background: var(--renotheme-dark);
-    border-left: solid 3px var(--renotheme-dark);
+    background: var(--renotheme-primary);
     margin-left: -3px;
     color: #fff;
     transform: skewX(-30deg);
@@ -1414,24 +1413,14 @@ label.error  {background:red; color:#fff; border-radius:4px; padding:4px 6px}
 
 @media (min-width: 992px) {
   #filters li:after {
-    position: absolute;
-    content: "";
-    height: 66px;
-    width: 1px;
-    background-color: var(--renotheme-dark);
-    right: 0;
-    top: -4px;
-    transform: rotate(30deg);
-    -moz-transform: rotate(30deg);
-    -webkit-transform: rotate(30deg);
+    display: none;
   }
 }
 
 @media (max-width: 991px) {
   #filters li { text-align: left; display: block; }
   #filters li.active, #filters li:hover {
-    background: var(--renotheme-dark);
-    border-left: solid 3px var(--renotheme-dark);
+    background: var(--renotheme-primary);
     color: #fff;
     margin-left: -3px;
   }
@@ -1459,8 +1448,7 @@ label.error  {background:red; color:#fff; border-radius:4px; padding:4px 6px}
 
 .portfolio-light #filters li:after { background-color: #fff; }
 .portfolio-light #filters li.active, .portfolio-light #filters li:hover {
-  background: var(--renotheme-secondary);
-  border-left: solid 2px var(--renotheme-secondary);
+  background: var(--renotheme-primary);
 }
 .portfolio-light #filters li.active a, .portfolio-light #filters li:hover a { color: var(--renotheme-text-dark); }
 .portfolio-light #options { background: #eee; }

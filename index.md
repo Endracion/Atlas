@@ -239,6 +239,10 @@ description: >-
 
 <div class="spacer-big"></div>
 
+{% include portfolio-grid.html %}
+
+<div class="spacer-big"></div>
+
 <div class="container">
   <div class="row">
     <div class="col-md-6">

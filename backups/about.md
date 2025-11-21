@@ -1,7 +1,7 @@
 ---
 title: About Les Entrepreneurs Atlas
 layout: renotheme-page
-permalink: /about/
+permalink: /about2/
 subtitle: "Your Trusted General Contractor in Québec"
 ---
 
