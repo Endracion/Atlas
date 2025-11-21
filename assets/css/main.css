@@ -364,13 +364,15 @@ p {
 }
 
 .btn-primary {
-  background-color: var(--primary-color);
-  color: var(--text-white);
+  background: var(--renotheme-primary);
+  border-color: var(--renotheme-primary);
+  color: var(--renotheme-light);
 }
 
 .btn-primary:hover {
-  background-color: var(--primary-dark);
-  transform: translateY(-2px);
+  background: var(--renotheme-secondary);
+  border-color: var(--renotheme-secondary);
+  color: var(--renotheme-light);
 }
 
 .btn-secondary {
