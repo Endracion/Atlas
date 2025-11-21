@@ -186,6 +186,7 @@ body.renotheme-theme {
   .logo img {
   height: 60px;
   width: auto;
+  transform: translateY(+30%);
   }
 }
 
@@ -842,18 +843,18 @@ body.renotheme-theme {
   }
 }
 
-/* Navbar Toggle Button */
+/* Navbar Toggle Button - Override Bootstrap styles */
 .navbar-toggle {
   background: var(--renotheme-primary) !important;
   border-radius: 2px;
   padding: 10px 12px;
-  margin: 10px 0;
+  margin: 0 !important; /* Override Bootstrap's vertical-align margins */
   transition: all 200ms ease-out;
   border: none !important;
   cursor: pointer;
+  position: absolute;
   top: 50%;
-  right: -15px;
-  transform: translateY(-50%);
+  transform: translateY(-70%);
   z-index: 1000;
 }
 
