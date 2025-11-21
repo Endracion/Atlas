@@ -1,119 +1,149 @@
 ---
-title: About Les Entrepreneurs Atlas
+title: About Us
 layout: renotheme-page
 permalink: /about/
-subtitle: "Your Trusted General Contractor in Québec"
+subtitle: "A LITTLE SOMETHING ABOUT US"
 ---
 
-<!-- About Hero Section -->
-<section class="section">
-  <div class="container">
-    <div class="text-center mb-4">
-      <h1>About Les Entrepreneurs Atlas</h1>
-      <p class="text-muted">Your Trusted General Contractor in Québec</p>
-    </div>
+<div class="row">
+  <div class="col-md-6">
+    <p>{{ site.company.name }} traces its roots back to 1989 in Colorado and since then have never looked back. With thousands of
+    successful projects under our belt, we can proudly say that we are one of the most trusted construction companies in
+    Colorado performing both domestic and international construction work.</p>
+    <p>For more than 25 years, Construction has offered a wide range of construction services in Colorado, many other cities
+    of United States and around the world. We strive to maintain the highest standards while exceeding client's expectations
+    at all levels. We not only honor commitments, but are known for meeting tough deadlines while delivering nothing but the
+    best. We aim to create a responsive client relationship that allows us to meet and even exceed the goals of each of our
+    projects.</p>
+    <p>{{ site.company.name }} is well known for its innovation and by collaborating successfully with our customers, designers,
+    sub-contractors, consultants as well as suppliers; we have been able to provide more specialized level of services.
+    We are continuously evolving and understand the different aspects of delivering high value construction and complex
+    projects with ease.</p>
   </div>
-</section>
-
-<!-- Company Story Section -->
-<section class="section bg-light">
-  <div class="container">
-    <div class="grid grid-2">
-      <div>
-        <h2>Our Story</h2>
-        <p>Les Entrepreneurs Atlas is a licensed general contractor serving Quebec with pride and excellence. With years of experience in the construction industry, we have built our reputation on delivering quality craftsmanship, reliable service, and professional results.</p>
-        
-        <p>From residential renovations to commercial construction projects, our team of skilled professionals is committed to bringing your vision to life. We believe in clear communication, transparent pricing, and delivering projects on time and within budget.</p>
-        
-        <h4>What Sets Us Apart:</h4>
-        <ul>
-          <li><i class="fas fa-check text-primary"></i> Licensed and insured general contractor</li>
-          <li><i class="fas fa-check text-primary"></i> RBQ licensed for your peace of mind</li>
-          <li><i class="fas fa-check text-primary"></i> Quality materials and skilled craftsmanship</li>
-          <li><i class="fas fa-check text-primary"></i> Transparent project timelines and communication</li>
-          <li><i class="fas fa-check text-primary"></i> Competitive pricing with no hidden fees</li>
-        </ul>
-      </div>
-      
-      <div>
-        <h2>Our Mission</h2>
-        <p>To provide exceptional construction and renovation services that exceed our clients' expectations while maintaining the highest standards of quality, safety, and professionalism.</p>
-        
-        <h4>Our Values:</h4>
-        <ul>
-          <li><i class="fas fa-star text-secondary"></i> <strong>Quality:</strong> We never compromise on the quality of our work or materials</li>
-          <li><i class="fas fa-star text-secondary"></i> <strong>Integrity:</strong> Honest communication and transparent business practices</li>
-          <li><i class="fas fa-star text-secondary"></i> <strong>Reliability:</strong> Meeting commitments and delivering on time</li>
-          <li><i class="fas fa-star text-secondary"></i> <strong>Customer Focus:</strong> Your satisfaction is our top priority</li>
-        </ul>
-      </div>
-    </div>
+  <div class="col-md-6">
+    <p>
+      <a href="/assets/images/renotheme/demo/projects/project1.jpg" data-rel="prettyPhoto" title="Project Image">
+        <img src="/assets/images/renotheme/demo/projects/project1.jpg" class="alignnone" alt="Project Image" />
+      </a>
+    </p>
   </div>
-</section>
-
-<!-- Services Overview -->
-<section class="section">
-  <div class="container">
-    <div class="section-title">
-      <h2>Our Expertise</h2>
-      <p>Comprehensive construction and renovation services for residential and commercial projects</p>
-    </div>
-    
-    <div class="grid grid-3">
-      <div class="card service-card">
-        <div class="service-icon">
-          <i class="fas fa-home"></i>
-        </div>
-        <h3>Residential Construction</h3>
-        <p>Complete home renovations, kitchen and bathroom remodels, basement finishing, and new construction projects.</p>
-      </div>
-      
-      <div class="card service-card">
-        <div class="service-icon">
-          <i class="fas fa-building"></i>
-        </div>
-        <h3>Commercial Projects</h3>
-        <p>Office renovations, retail space construction, restaurant builds, and commercial property improvements.</p>
-      </div>
-      
-      <div class="card service-card">
-        <div class="service-icon">
-          <i class="fas fa-tree"></i>
-        </div>
-        <h3>Landscaping & Outdoor</h3>
-        <p>Patio construction, deck building, fence installation, and comprehensive outdoor living space design.</p>
-      </div>
-    </div>
+</div>
+<div class="spacer"></div>
+<div class="row">
+  <div class="col-md-3">
+    <h4>
+      <a href="/assets/images/renotheme/demo/about/about_us_1.jpg" data-rel="prettyPhoto" title="Member name">
+        <img src="/assets/images/renotheme/demo/about/about_us_1.jpg" class="alignleft" alt="About Us 1" width="526" height="350"/>
+      </a>
+    </h4>
+    <h5>GEORGE QUICK</h5>
+    <p><em>CEO and Board Member</em></p>
+    <p>
+      Ut lobortis magna tortor, nec porttitor turpis porta in. Donec a felis sed ligula aliquet sollicitudin a in elit.
+      Nunc at commodo erat, fringilla egestas tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+      posuere cubilia Curae.
+    </p>
   </div>
-</section>
-
-<!-- Credentials Section -->
-<section class="section bg-primary text-white">
-  <div class="container">
-    <div class="section-title">
-      <h2>Licenses & Credentials</h2>
-      <p>Fully licensed and insured for your protection and peace of mind</p>
-    </div>
-    
-    <div class="grid grid-2 text-center">
-      <div>
-        <div class="service-icon bg-secondary">
-          <i class="fas fa-certificate"></i>
-        </div>
-        <h4>General Contractor License</h4>
-        <p>RBQ {{ site.company.rbq_license }}<br>Licensed to operate in all of Quebec</p>
-      </div>
-      
-      <div>
-        <div class="service-icon bg-secondary">
-          <i class="fas fa-shield-alt"></i>
-        </div>
-        <h4>Full Insurance Coverage</h4>
-        <p>Liability and Workers' Compensation<br>Complete project protection</p>
-      </div>
-    </div>
+  <div class="col-md-3">
+    <h4>
+      <a href="/assets/images/renotheme/demo/about/about_us_7.jpg" data-rel="prettyPhoto" title="Member name">
+        <img src="/assets/images/renotheme/demo/about/about_us_7.jpg"  class="alignleft" alt="About Us 2" width="526" height="350"/>
+      </a>
+    </h4>
+    <h5>SAMANTHA FOX</h5>
+    <p><em>Chief Accountant Manager</em></p>
+    <p>
+      Ut lobortis magna tortor, nec porttitor turpis porta in. Donec a felis sed ligula aliquet sollicitudin a in elit.
+      Nunc at commodo erat, fringilla egestas tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+      posuere cubilia Curae.
+    </p>
   </div>
-</section>
 
-<!-- Services CTA -->
-{% include services-cta.html %}
+  <div class="col-md-3">
+    <h4>
+      <a href="/assets/images/renotheme/demo/about/about_us_3.jpg" data-rel="prettyPhoto" title="Member name">
+        <img src="/assets/images/renotheme/demo/about/about_us_3.jpg" class="alignleft" alt="About Us 3" width="526" height="350"/>
+      </a>
+    </h4>
+    <h5>JEREMY HENDRIXON</h5>
+    <p><em>CTO and Finance Manager</em></p>
+    <p>
+      Ut lobortis magna tortor, nec porttitor turpis porta in. Donec a felis sed ligula aliquet sollicitudin a in elit.
+      Nunc at commodo erat, fringilla egestas tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+      posuere cubilia Curae.
+    </p>
+  </div>
+  <div class="col-md-3">
+    <h4>
+      <a href="/assets/images/renotheme/demo/about/about_us_8.jpg" data-rel="prettyPhoto" title="Member name">
+        <img src="/assets/images/renotheme/demo/about/about_us_8.jpg" class="alignleft" alt="About Us 4" width="526" height="350"/>
+      </a>
+    </h4>
+    <h5>WILLIAM WASHINGTON</h5>
+    <p><em>CEO and Board Member</em></p>
+    <p>
+      Ut lobortis magna tortor, nec porttitor turpis porta in. Donec a felis sed ligula aliquet sollicitudin a in elit.
+      Nunc at commodo erat, fringilla egestas tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+      posuere cubilia Curae.
+    </p>
+  </div>
+</div>
+<div class="spacer"></div>
+<div class="row">
+  <div class="col-md-3">
+    <h4>
+      <a href="/assets/images/renotheme/demo/about/about_us_5.jpg" data-rel="prettyPhoto" title="Member name">
+        <img src="/assets/images/renotheme/demo/about/about_us_5.jpg" class="alignleft" alt="About Us 5" width="526" height="350"/>
+      </a>
+    </h4>
+    <h5>REBECCA RAMIREZ</h5>
+    <p><em>Chief Accountant Manager</em></p>
+    <p>
+      Ut lobortis magna tortor, nec porttitor turpis porta in. Donec a felis sed ligula aliquet sollicitudin a in elit.
+      Nunc at commodo erat, fringilla egestas tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+      posuere cubilia Curae.
+    </p>
+  </div>
+  <div class="col-md-3">
+    <h4>
+      <a href="/assets/images/renotheme/demo/about/about_us_4.jpg" data-rel="prettyPhoto" title="Member name">
+        <img src="/assets/images/renotheme/demo/about/about_us_4.jpg" class="alignleft" alt="About Us 6" width="526" height="350"/>
+      </a>
+    </h4>
+    <h5>GEORGE QUICK</h5>
+    <p><em>CEO and Board Member</em></p>
+    <p>
+      Ut lobortis magna tortor, nec porttitor turpis porta in. Donec a felis sed ligula aliquet sollicitudin a in elit.
+      Nunc at commodo erat, fringilla egestas tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+      posuere cubilia Curae.
+    </p>
+  </div>
+  <div class="col-md-3">
+    <h4>
+      <a href="/assets/images/renotheme/demo/about/about_us_2.jpg" data-rel="prettyPhoto" title="Member name">
+        <img src="/assets/images/renotheme/demo/about/about_us_2.jpg" class="alignleft" alt="About Us 7" width="526" height="350"/>
+      </a>
+    </h4>
+    <h5>WILLIAM DOE</h5>
+    <p><em>Public Relations</em></p>
+    <p>
+      Ut lobortis magna tortor, nec porttitor turpis porta in. Donec a felis sed ligula aliquet sollicitudin a in elit.
+      Nunc at commodo erat, fringilla egestas tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+      posuere cubilia Curae.
+    </p>
+  </div>
+  <div class="col-md-3">
+    <h4>
+      <a href="/assets/images/renotheme/demo/about/about_us_6.jpg" data-rel="prettyPhoto" title="Member name">
+        <img src="/assets/images/renotheme/demo/about/about_us_6.jpg" class="alignleft" alt="About Us 8" width="526" height="350"/>
+      </a>
+    </h4>
+    <h5>JEREMY HENDRIXON</h5>
+    <p><em>CTO and Finance Manager</em></p>
+    <p>
+      Ut lobortis magna tortor, nec porttitor turpis porta in. Donec a felis sed ligula aliquet sollicitudin a in elit.
+      Nunc at commodo erat, fringilla egestas tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+      posuere cubilia Curae.
+    </p>
+  </div>
+</div>

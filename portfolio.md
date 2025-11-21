@@ -1,112 +1,111 @@
 ---
-title: Our Portfolio
+title: Projects
 layout: renotheme-page
 permalink: /portfolio/
-subtitle: "Showcasing Our Construction Expertise"
+subtitle: "THIS IS OUR BEST WORK"
 ---
 
-<!-- Portfolio Hero -->
-<section class="section">
+<div class="portfolio-mini-wrapper portfolio-light">
   <div class="container">
-    <div class="text-center mb-4">
-      <h1>Our Construction Portfolio</h1>
-      <p class="text-muted">Showcasing our expertise in residential, commercial, and landscaping projects</p>
-    </div>
-  </div>
-</section>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="portfolio-container">
+          <div id="options" class="text-left">
+            <ul id="filters" class="filter">
+              <li class="active"><a href="#" data-filter="*">All Projects</a></li>
+              <li><a href="#" data-filter=".filter-buildings">Buildings</a></li>
+              <li><a href="#" data-filter=".filter-interior-design">Interior Design</a></li>
+              <li><a href="#" data-filter=".filter-isolation">Isolation</a></li>
+              <li><a href="#" data-filter=".filter-plumbing">Plumbing</a></li>
+              <li><a href="#" data-filter=".filter-tiling">Tiling</a></li>
+            </ul>
+          </div>
 
-<!-- Portfolio Grid -->
-<section class="section">
-  <div class="container">
-    <div class="grid grid-3">
-      {% for project in site.pages %}
-        {% if project.layout == "project" %}
-        <div class="card project-card">
-          {% if project.thumbnail %}
-          <img src="{{ project.thumbnail }}" alt="{{ project.title }}" class="project-image">
-          {% endif %}
-          <div class="card-body">
-            <h4>{{ project.title }}</h4>
-            <p class="text-muted">
-              <i class="fas fa-map-marker-alt"></i> {{ project.location }}<br>
-              {% if project.year %}<i class="fas fa-calendar"></i> {{ project.year }}{% endif %}
-              {% if project.cost %} • <i class="fas fa-dollar-sign"></i> {{ project.cost }}{% endif %}
-            </p>
-            <p>{{ project.content | strip_html | truncatewords: 25 }}</p>
-            <div class="hero-cta">
-              <a href="{{ project.url }}" class="btn btn-outline">View Project</a>
+          <div id="portfolio-content" class="projects-container row">
+            <div class="project-post filter-buildings col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <img src="/assets/images/renotheme/demo/projects/3.jpg" alt="Contemporary Villa" />
+              <div class="project-content">
+                <div class="inner-project">
+                  <h3>Contemporary Villa</h3>
+                  <a href="/assets/images/renotheme/demo/projects/big1.jpg" class="project-link" title="Contemporary Villa" data-rel="prettyPhoto[gallery]">
+                    Zoom Project
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-post filter-isolation col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <img src="/assets/images/renotheme/demo/projects/1.jpg" alt="Green House" />
+              <div class="project-content">
+                <div class="inner-project">
+                  <h3>Green House</h3>
+                  <a href="/portfolio/kitchen-renovation" class="project-link">View Project</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-post filter-buildings filter-interior-design col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <img src="/assets/images/renotheme/demo/projects/4.jpg" alt="Villa Rustica Renovation" />
+              <div class="project-content">
+                <div class="inner-project">
+                  <h3>Villa Rustica Renovation</h3>
+                  <a href="/assets/images/renotheme/demo/projects/big1.jpg" class="project-link" title="Villa Rustica Renovation" data-rel="prettyPhoto[gallery]">
+                    Zoom Project
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-post filter-isolation filter-plumbing col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <img src="/assets/images/renotheme/demo/projects/6.jpg" alt="Pool In Luxury Neighbourhood" />
+              <div class="project-content">
+                <div class="inner-project">
+                  <h3>Pool In Luxury Neighbourhood</h3>
+                  <a href="/portfolio/office-renovation" class="project-link">View Project</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-post filter-buildings filter-tiling col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <img src="/assets/images/renotheme/demo/projects/2.jpg" alt="House of Cards" />
+              <div class="project-content">
+                <div class="inner-project">
+                  <h3>House of Cards</h3>
+                  <a href="/assets/images/renotheme/demo/projects/big1.jpg" class="project-link" title="House of Cards" data-rel="prettyPhoto[gallery]">
+                    Zoom Project
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-post filter-isolation filter-plumbing col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <img src="/assets/images/renotheme/demo/projects/8.jpg" alt="Green School" />
+              <div class="project-content">
+                <div class="inner-project">
+                  <h3>Green School</h3>
+                  <a href="/portfolio/patio-landscaping" class="project-link">View Project</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-post filter-buildings col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <img src="/assets/images/renotheme/demo/projects/5.jpg" alt="House Under The Palms" />
+              <div class="project-content">
+                <div class="inner-project">
+                  <h3>House Under The Palms</h3>
+                  <a href="/assets/images/renotheme/demo/projects/big1.jpg" class="project-link" title="House Under The Palms" data-rel="prettyPhoto[gallery]">
+                    Zoom Project
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-post filter-isolation col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <img src="/assets/images/renotheme/demo/projects/7.jpg" alt="Kitchen And Living Room" />
+              <div class="project-content">
+                <div class="inner-project">
+                  <h3>Kitchen And Living Room</h3>
+                  <a href="/portfolio/kitchen-renovation" class="project-link">View Project</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        {% endif %}
-      {% endfor %}
-      
-      <!-- Featured Projects (if no project pages exist) -->
-      {% if site.pages.size == 0 %}
-      <div class="card project-card">
-        <img src="/assets/images/kitchen-renovation.jpg" alt="Kitchen Renovation" class="project-image">
-        <div class="card-body">
-          <h4>Complete Kitchen Renovation</h4>
-          <p class="text-muted">
-            <i class="fas fa-map-marker-alt"></i> Québec City, QC<br>
-            <i class="fas fa-calendar"></i> 2024 • <i class="fas fa-dollar-sign"></i> $45,000
-          </p>
-          <p>Comprehensive kitchen renovation transforming a dated 1990s kitchen into a modern, functional space with custom cabinetry and high-end appliances.</p>
-          <div class="hero-cta">
-            <a href="/portfolio/kitchen-renovation/" class="btn btn-outline">View Project</a>
-          </div>
-        </div>
       </div>
-      
-      <div class="card project-card">
-        <img src="/assets/images/office-renovation.jpg" alt="Office Renovation" class="project-image">
-        <div class="card-body">
-          <h4>Commercial Office Renovation</h4>
-          <p class="text-muted">
-            <i class="fas fa-map-marker-alt"></i> Montreal, QC<br>
-            <i class="fas fa-calendar"></i> 2024 • <i class="fas fa-dollar-sign"></i> $75,000
-          </p>
-          <p>Modern office transformation creating an open, collaborative work environment with contemporary design and integrated technology.</p>
-          <div class="hero-cta">
-            <a href="/portfolio/office-renovation/" class="btn btn-outline">View Project</a>
-          </div>
-        </div>
-      </div>
-      
-      <div class="card project-card">
-        <img src="/assets/images/patio-landscaping.jpg" alt="Patio & Landscaping" class="project-image">
-        <div class="card-body">
-          <h4>Outdoor Patio & Landscaping</h4>
-          <p class="text-muted">
-            <i class="fas fa-map-marker-alt"></i> Laval, QC<br>
-            <i class="fas fa-calendar"></i> 2024 • <i class="fas fa-dollar-sign"></i> $28,000
-          </p>
-          <p>Comprehensive outdoor living space with natural stone patio, custom pergola, and professional landscaping design.</p>
-          <div class="hero-cta">
-            <a href="/portfolio/patio-landscaping/" class="btn btn-outline">View Project</a>
-          </div>
-        </div>
-      </div>
-      {% endif %}
+      <div class="clear"></div>
     </div>
   </div>
-</section>
-
-<!-- Services CTA -->
-<section class="section bg-light">
-  <div class="container text-center">
-    <h2>Ready to Start Your Project?</h2>
-    <p class="text-muted mb-3">Let us bring your vision to life with quality craftsmanship and professional service</p>
-    <div class="hero-cta">
-      <a href="/contact/" class="btn btn-primary">
-        <i class="fas fa-envelope"></i> Get Free Quote
-      </a>
-      <a href="tel:{{ site.company.phone }}" class="btn btn-secondary">
-        <i class="fas fa-phone"></i> Call Now
-      </a>
-      <a href="/services/" class="btn btn-secondary">
-        <i class="fas fa-tools"></i> View Services
-      </a>
-    </div>
-  </div>
-</section>
+</div>
