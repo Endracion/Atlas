@@ -173,9 +173,21 @@ body.renotheme-theme {
   width: auto;
 }
 
-@media (min-width: 480px) {
+@media (max-width: 991px) {
+  .logo {
+    float: none;
+    text-align: center;
+    max-width: 200px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@media (min-width: 480px) and (max-width: 991px) {
   .logo { max-width: 200px; }
 }
+
 @media (min-width: 992px) {
   .logo {
     float: none;
@@ -200,6 +212,12 @@ body.renotheme-theme {
   color: #f2f2f2;
   font-size: 22px;
   margin: 20px 0;
+}
+
+@media (max-width: 991px) {
+  .logo h1 {
+    margin: 10px 0;
+  }
 }
 
 @media (min-width: 480px) {
@@ -368,6 +386,22 @@ body.renotheme-theme {
     padding: 27px 22px;
     margin-right: -4px;
     text-decoration: none;
+  }
+}
+
+/* Mobile navigation styling */
+@media (max-width: 991px) {
+  .navigation--main > li > a {
+    color: #999999;
+    background: var(--renotheme-light);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 15px 20px;
+    text-decoration: none;
+  }
+
+  .navigation--main > li > a:hover {
+    color: var(--renotheme-primary);
+    background: #f8f8f8;
   }
 }
 @media (min-width: 1200px) {
@@ -812,6 +846,10 @@ body.renotheme-theme {
   transition: all 200ms ease-out;
   border: none;
   cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  z-index: 1000;
 }
 
 @media (min-width: 480px) {
@@ -838,6 +876,15 @@ body.renotheme-theme {
   outline: none;
 }
 
+.navbar-toggle__text {
+  color: var(--renotheme-light);
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-right: 8px;
+}
+
 .navbar-toggle__icon-bar {
   vertical-align: middle;
   display: inline-block;
@@ -851,30 +898,33 @@ body.renotheme-theme {
   }
 }
 
-/* Jumbotron/Carousel Styles */
+/* Jumbotron/Carousel Styles - Override Bootstrap defaults */
 .jumbotron {
   position: relative;
   margin-bottom: 0;
   background-color: #f8f9fa;
   overflow: hidden;
+  padding: 0 !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
 }
 
 .jumbotron--with-captions {
-  margin-top: -37px;
+  margin-top: 0;
   z-index: 1;
 }
 
-.carousel {
+.jumbotron .carousel {
   position: relative;
 }
 
-.carousel-inner {
+.jumbotron .carousel-inner {
   position: relative;
   width: 100%;
   overflow: hidden;
 }
 
-.carousel-inner > .item {
+.jumbotron .carousel-inner > .item {
   position: relative;
   display: none;
   -webkit-transition: .6s ease-in-out left;
@@ -882,42 +932,42 @@ body.renotheme-theme {
   transition: .6s ease-in-out left;
 }
 
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
+.jumbotron .carousel-inner > .item > img,
+.jumbotron .carousel-inner > .item > a > img {
   line-height: 1;
   width: 100%;
   height: auto;
 }
 
-.carousel-inner > .active {
+.jumbotron .carousel-inner > .active {
   display: block;
 }
 
-.carousel-inner > .next,
-.carousel-inner > .prev {
+.jumbotron .carousel-inner > .next,
+.jumbotron .carousel-inner > .prev {
   position: absolute;
   top: 0;
   width: 100%;
 }
 
-.carousel-inner > .next {
+.jumbotron .carousel-inner > .next {
   left: 100%;
 }
 
-.carousel-inner > .prev {
+.jumbotron .carousel-inner > .prev {
   left: -100%;
 }
 
-.carousel-inner > .next.left,
-.carousel-inner > .prev.right {
+.jumbotron .carousel-inner > .next.left,
+.jumbotron .carousel-inner > .prev.right {
   left: 0;
 }
 
-.carousel-inner > .active.left {
+.jumbotron .carousel-inner > .active.left {
   left: -100%;
 }
 
-.carousel-inner > .active.right {
+.jumbotron .carousel-inner > .active.right {
   left: 100%;
 }
 
@@ -980,7 +1030,7 @@ body.renotheme-theme {
 }
 
 .jumbotron__title h1 {
-  font-size: 30px;
+  font-size: 32px !important;
   font-weight: bold;
   margin-bottom: 20px;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
@@ -1016,7 +1066,7 @@ body.renotheme-theme {
   text-decoration: none;
 }
 
-.carousel-control {
+.jumbotron .carousel-control {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -1034,22 +1084,22 @@ body.renotheme-theme {
   z-index: 10;
 }
 
-.carousel-control:hover {
+.jumbotron .carousel-control:hover {
   background-color: rgba(190, 44, 51, 0.8);
   border-color: var(--renotheme-secondary);
   color: white;
   text-decoration: none;
 }
 
-.carousel-control.left {
+.jumbotron .carousel-control.left {
   left: 30px;
 }
 
-.carousel-control.right {
+.jumbotron .carousel-control.right {
   right: 30px;
 }
 
-.carousel-control .fa {
+.jumbotron .carousel-control .fa {
   font-size: 20px;
 }
 
@@ -1059,54 +1109,54 @@ body.renotheme-theme {
       margin-top: 0;
    }
 
-   .carousel-content {
+   .jumbotron .carousel-content {
       left: 5%;
       top: 40%;
       max-width: 90%;
       padding: 20px;
    }
 
-   .jumbotron__title h1 {
-      font-size: 32px;
+   .jumbotron .jumbotron__title h1 {
+      font-size: 20px;
    }
 
-   .jumbotron__content p {
+   .jumbotron .jumbotron__content p {
       font-size: 16px;
    }
 
-   .carousel-control {
+   .jumbotron .carousel-control {
       width: 50px;
       height: 50px;
       line-height: 44px;
       font-size: 20px;
    }
 
-   .carousel-control.left {
+   .jumbotron .carousel-control.left {
       left: 15px;
    }
 
-   .carousel-control.right {
+   .jumbotron .carousel-control.right {
       right: 15px;
    }
 }
 
 @media (max-width: 480px) {
-   .carousel-content {
+   .jumbotron .carousel-content {
       left: 2%;
       top: 30%;
       max-width: 96%;
       padding: 15px;
    }
 
-   .jumbotron__title h1 {
+   .jumbotron .jumbotron__title h1 {
       font-size: 24px;
    }
 
-   .jumbotron__content p {
+   .jumbotron .jumbotron__content p {
       font-size: 14px;
    }
 
-   .jumbotron__content .btn {
+   .jumbotron .jumbotron__content .btn {
       padding: 12px 24px;
       font-size: 14px;
    }
