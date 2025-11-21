@@ -117,8 +117,6 @@ body.renotheme-theme {
 .renotheme-container {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 @media (min-width: 768px) {
@@ -163,8 +161,8 @@ body.renotheme-theme {
 /* Header */
 .header {
   background-color: var(--renotheme-dark);
-  /* position: relative;
-  overflow: hidden; */
+  position: relative;
+  overflow: hidden;
 }
 
 .logo {
@@ -601,7 +599,7 @@ body.renotheme-theme {
   transition: all 200ms ease-out;
   border: 2px solid transparent;
   display: inline-block;
-  text-decoration: none;
+  text-decoration: none !important;
   font-weight: bold;
   font-size: 14px;
 }
@@ -839,16 +837,17 @@ body.renotheme-theme {
 
 /* Navbar Toggle Button */
 .navbar-toggle {
-  background: var(--renotheme-primary);
+  background: var(--renotheme-primary) !important;
   border-radius: 2px;
   padding: 10px 12px;
   margin: 10px 0;
   transition: all 200ms ease-out;
-  border: none;
+  border: none !important;
   cursor: pointer;
   position: absolute;
-  top: 10px;
-  right: 15px;
+  top: 50%;
+  right: -15px;
+  transform: translateY(-50%);
   z-index: 1000;
 }
 
@@ -857,7 +856,7 @@ body.renotheme-theme {
 }
 
 .navbar-toggle:hover {
-  background: var(--renotheme-primary);
+  background: var(--renotheme-primary) !important;
 }
 
 .navbar-toggle .icon-bar {
