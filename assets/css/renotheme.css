@@ -1650,6 +1650,8 @@ label.error  {background:red; color:#fff; border-radius:4px; padding:4px 6px}
 .portfolio-mini-wrapper { background: var(--renotheme-light); }
 .portfolio-mini-wrapper.portfolio-light { background: none; }
 
+.projects-container { display: block; }
+
 #options { background: var(--renotheme-light); text-align: center; margin-bottom: 30px; }
 
 #filters { text-align: center; padding-left: 0; }

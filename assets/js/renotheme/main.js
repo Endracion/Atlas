@@ -23,75 +23,34 @@ $( document ).ready(function() {
     });
 
 /* ---------------------------------------------------
-	Isotope Portfolio and Blog
+	Isotope Portfolio
 -------------------------------------------------- */
 
-/*-------------------------------------------------*/
-	/* =  portfolio isotope
-	/*-------------------------------------------------*/
+$(document).ready(function() {
+    // Simple portfolio initialization
+    if ($('#portfolio-content').length > 0) {
+        $('#portfolio-content').show();
 
-	var winDow = $(window);
-		// Needed variables
-		var $container=$('.projects-container');
-		var $filter=$('.filter');
+        // Simple filter functionality without isotope
+        $('#filters a').click(function(e) {
+            e.preventDefault();
+            var filter = $(this).attr('data-filter');
 
-		try{
-			$container.imagesLoaded( function(){
-				$container.show();
-				$container.isotope({
-					filter:'*',
-					itemSelector: '.project-post',
-					layoutMode:'masonry',
-					animationOptions:{
-						duration:750,
-						easing:'linear'
-					}
-				});
-			});
-		} catch(err) {
-		}
+            // Remove active class from all
+            $('#filters li').removeClass('active');
+            // Add active class to clicked
+            $(this).parent().addClass('active');
 
-		winDow.bind('resize', function(){
-			var selector = $filter.find('li.active a').attr('data-filter');
+            // Simple show/hide based on filter
+            if (filter === '*') {
+                $('.project-post').show();
+            } else {
+                $('.project-post').hide();
+                $(filter).show();
+            }
 
-			try {
-				$container.isotope({ 
-					filter	: selector,
-					animationOptions: {
-						duration: 750,
-						easing	: 'linear',
-						queue	: false,
-					}
-				});
-			} catch(err) {
-			}
-			return false;
-		});
-		
-		// Isotope Filter
-		$filter.find('a').click(function(e){
-			e.preventDefault();
-			var selector = $(this).attr('data-filter');
-
-			try {
-				$container.isotope({
-					filter	: selector,
-					itemSelector: '.project-post',
-
-					animationOptions: {
-						duration: 750,
-						easing	: 'linear',
-						queue	: false,
-
-					}
-				});
-			} catch(err) {
-
-			}
-			return false;
-		});
-		$('.filter a').click(function(){
-			$('.filter li').removeClass('active');
-			$(this).parent().addClass('active');
-		});
+            return false;
+        });
+    }
+});
 } );

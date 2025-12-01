@@ -1,6 +1,6 @@
 ---
 title: Projects
-layout: renotheme-page
+layout: renotheme
 permalink: /portfolio/
 subtitle: "THIS IS OUR BEST WORK"
 ---

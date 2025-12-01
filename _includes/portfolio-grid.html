@@ -14,7 +14,7 @@
             </ul>
           </div>
 
-          <div id="portfolio-content" class="projects-container row">
+          <div id="portfolio-content" class="projects-container">
             {% for project in site.projects %}
             <div class="project-post {% for category in project.categories %}filter-{{ category }} {% endfor %}col-lg-3 col-md-4 col-sm-6 col-xs-12">
               <img src="{{ project.thumbnail }}" alt="{{ project.title }}" />
