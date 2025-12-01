@@ -494,6 +494,7 @@ body.renotheme-theme {
   .main-title { padding: 97px 0 60px 0; }
 }
 
+
 /* Responsive main title adjustments */
 @media (max-width: 767px) {
   .main-title {
@@ -975,7 +976,7 @@ body.renotheme-theme {
   .navigation--main .sub-menu > li > a {
     line-height: 21px;
   }
-
+  
   /* Mobile navigation dropdown behavior */
   .navbar-nav .open .dropdown-menu {
     position: static;
@@ -1344,6 +1345,7 @@ body.renotheme-theme {
    }
 
    .jumbotron .carousel-content {
+      left: 5%;
       top: 40%;
       max-width: 90%;
       padding: 20px;
@@ -1356,6 +1358,22 @@ body.renotheme-theme {
    .jumbotron .jumbotron__content p {
       font-size: 16px;
    }
+
+   .jumbotron .carousel-control {
+      width: 50px;
+      height: 50px;
+      line-height: 44px;
+      font-size: 20px;
+   }
+
+   .jumbotron .carousel-control.left {
+      left: 15px;
+   }
+
+   .jumbotron .carousel-control.right {
+      right: 15px;
+   }
+}
 
 @media (max-width: 480px) {
    .jumbotron .carousel-content {
@@ -1714,6 +1732,21 @@ label.error  {background:red; color:#fff; border-radius:4px; padding:4px 6px}
   }
 }
 
+@media (max-width: 991px) {
+  #filters li { text-align: left; display: block; }
+  #filters li.active, #filters li:hover {
+    background: var(--renotheme-primary);
+    color: #fff;
+    margin-left: -3px;
+  }
+  #filters li.active a, #filters li:hover a {
+    display: inline-block;
+    border-bottom: 3px solid var(--renotheme-secondary);
+    padding-bottom: 3px;
+    padding-top: 6px;
+    color: #fff;
+  }
+}
 
 #portfolio-content { padding: 0; list-style: none; }
 #portfolio-content li {
@@ -1887,5 +1920,4 @@ body, .textwidget { color: #999999; }
   position: absolute;
   content: "\f0d7";
   font-family: "FontAwesome";
-}
 }
