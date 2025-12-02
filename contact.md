@@ -9,7 +9,6 @@ subtitle: "Get In Touch With Our Team"
 <section class="section">
   <div class="container">
     <div class="text-center mb-4">
-      <h1>Get In Touch</h1>
       <p class="text-muted">Ready to start your project? Contact us today for a free consultation and detailed quote</p>
     </div>
   </div>

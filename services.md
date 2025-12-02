@@ -2,7 +2,7 @@
 title: Our Services
 layout: renotheme-page
 permalink: /services/
-subtitle: "WHAT WE CAN DO FOR YOU"
+subtitle: "What We Can Do For You"
 ---
 
 <main class="col-xs-12  col-md-9  col-md-push-3" role="main">
@@ -103,3 +103,6 @@ subtitle: "WHAT WE CAN DO FOR YOU"
     </div>
   </div>
 </div>
+
+
+{% include services-cta.html %}
