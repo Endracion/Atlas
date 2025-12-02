@@ -1,0 +1,43 @@
+---
+layout: renotheme
+---
+
+<div class="renotheme-master-container">
+	<div class="renotheme-container">
+		<div class="row">
+			<main class="col-xs-12 col-md-9 col-md-push-3" role="main">
+				<div class="row">
+					<div class="col-md-6">
+						<a class="page-box__picture" href="/assets/images/renotheme/demo/content/big.jpg" data-rel="prettyPhoto" title="Service image" style="margin-bottom: 20px; display: block;">
+							<img width="360" height="240" src="/assets/images/renotheme/demo/content/service9.jpg" alt="Service Image" />
+						</a>
+						<a class="page-box__picture" href="/assets/images/renotheme/demo/content/big.jpg" data-rel="prettyPhoto" title="Service image">
+							<img width="360" height="240" src="/assets/images/renotheme/demo/content/service5.jpg" alt="Service Image" />
+						</a>
+					</div>
+					<div class="col-md-6">
+						{{ content }}
+					</div>
+				</div>
+				<div class="spacer"></div>
+			</main>
+			<div class="col-xs-12 col-md-3 col-md-pull-9">
+				<div class="sidebar">
+					<div class="widget widget_nav_menu push-down-30">
+						<div class="menu-services-menu-container">
+							<ul id="menu-services-menu" class="menu">
+								<li {% if page.url == '/services/' %}class="current-menu-item"{% endif %}><a href="/services/">ALL SERVICES</a></li>
+								<li {% if page.url contains '/services/construction-management/' %}class="current-menu-item"{% endif %}><a href="/services/construction-management/">CONSTRUCTION MANAGEMENT</a></li>
+								<li {% if page.url contains '/services/design-and-build/' %}class="current-menu-item"{% endif %}><a href="/services/design-and-build/">DESIGN AND BUILD</a></li>
+								<li {% if page.url contains '/services/kitchen-remodeling/' %}class="current-menu-item"{% endif %}><a href="/services/kitchen-remodeling/">KITCHEN REMODELING</a></li>
+								<li {% if page.url contains '/services/tiling-and-painting/' %}class="current-menu-item"{% endif %}><a href="/services/tiling-and-painting/">TILING AND PAINTING</a></li>
+								<li {% if page.url contains '/services/condo-remodeling/' %}class="current-menu-item"{% endif %}><a href="/services/condo-remodeling/">CONDO REMODELING</a></li>
+								<li {% if page.url contains '/services/hardwood-flooring/' %}class="current-menu-item"{% endif %}><a href="/services/hardwood-flooring/">HARDWOOD FLOORING</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

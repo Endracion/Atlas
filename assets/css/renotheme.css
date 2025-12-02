@@ -464,8 +464,8 @@ body.renotheme-theme {
 @media (min-width: 992px) {
   .navigation--main .sub-menu > li > a {
     color: var(--renotheme-text-dark);
-    background: var(--renotheme-primary);
-    border-bottom: 1px solid var(--renotheme-primary);
+    background: var(--renotheme-light);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     padding: 12px 30px 12px 30px;
   }
 }
@@ -477,8 +477,8 @@ body.renotheme-theme {
 
 @media (min-width: 992px) {
   .navigation--main .sub-menu > li > a:hover {
-    background: var(--renotheme-primary);
-    color: var(--renotheme-text-dark);
+    background: rgba(190, 44, 51, 1);
+    color: var(--renotheme-light);
   }
 }
 

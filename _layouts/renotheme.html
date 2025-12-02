@@ -22,6 +22,16 @@ layout: compress
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
+	<!-- Custom styles for dropdown hover -->
+	<style>
+		@media (min-width: 992px) {
+			.navigation--main > li:hover .sub-menu {
+				visibility: visible;
+				opacity: 1;
+			}
+		}
+	</style>
+
 </head>
 <body class="renotheme-theme">
 {% unless page.url == '/' %}
@@ -100,9 +110,13 @@ layout: compress
 						<li class="menu-item-has-children {% if page.url contains '/services' %}current-menu-item{% endif %}">
 							<a href="/services/">OUR SERVICES</a>
 							<ul class="sub-menu">
-								<li><a href="/services/#renovations">Home Renovations</a></li>
-								<li><a href="/services/#landscaping">Landscaping</a></li>
-								<li><a href="/services/#contracting">General Contracting</a></li>
+								<li><a href="/services/construction-management/">Construction Management</a></li>
+								<li><a href="/services/design-and-build/">Design and Build</a></li>
+								<li><a href="/services/kitchen-remodeling/">Kitchen Remodeling</a></li>
+								<li><a href="/services/tiling-and-painting/">Tiling and Painting</a></li>
+								<li><a href="/services/condo-remodeling/">Condo Remodeling</a></li>
+								<li><a href="/services/hardwood-flooring/">Hardwood Flooring</a></li>
+								<li><a href="/services/">All Services</a></li>
 							</ul>
 						</li>
 						<li class="{% if page.url contains '/about' %}current-menu-item{% endif %}"><a href="/about/">ABOUT US</a></li>
