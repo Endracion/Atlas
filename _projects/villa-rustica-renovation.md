@@ -4,6 +4,8 @@ categories: ["buildings", "interior-design"]
 thumbnail: "/assets/images/renotheme/demo/projects/4.jpg"
 images:
   - "/assets/images/renotheme/demo/projects/big1.jpg"
+  - "/assets/images/renotheme/demo/projects/big1.jpg"
+  - "/assets/images/renotheme/demo/projects/big1.jpg"
 layout: renotheme-project
 ---
 

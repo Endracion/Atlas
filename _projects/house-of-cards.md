@@ -4,6 +4,8 @@ categories: ["buildings", "tiling"]
 thumbnail: "/assets/images/renotheme/demo/projects/2.jpg"
 images:
   - "/assets/images/renotheme/demo/projects/big1.jpg"
+  - "/assets/images/renotheme/demo/projects/big1.jpg"
+  - "/assets/images/renotheme/demo/projects/big1.jpg"
 layout: renotheme-project
 ---
 
