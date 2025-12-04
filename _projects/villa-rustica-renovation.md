@@ -1,6 +1,6 @@
 ---
 title: "Villa Rustica Renovation"
-categories: ["buildings", "interior-design"]
+categories: ["interior-exterior-renovations"]
 thumbnail: "/assets/images/renotheme/demo/projects/4.jpg"
 images:
   - "/assets/images/renotheme/demo/projects/big1.jpg"

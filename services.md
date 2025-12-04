@@ -5,83 +5,156 @@ permalink: /services/
 subtitle: "What We Can Do For You"
 ---
 
+<section class="section">
+  <div class="container">
+    <div class="text-center mb-4">
+      <p class="text-muted">As a fully licensed RBQ general contractor, we offer complete residential services — from groundwork to finishing. Here's a detailed list of our work:</p>
+    </div>
+  </div>
+</section>
+
+<div class="row">
 <main class="col-xs-12  col-md-9  col-md-push-3" role="main">
   <div class="row">
     <div class="col-md-4 page-box page-box--block">
-      <a class="page-box__picture" href="/services/design-and-build/">
-        <img width="360" height="240" src="/assets/images/renotheme/demo/content/content_1.jpg" alt="Design and Build" />
-      </a>
-      <div class="page-box__content">
-        <h5 class="page-box__title  text-uppercase">
-          <a href="/services/design-and-build/">Design and Build</a>
-        </h5>
-        We aim to eliminate the task of dividing your project between different architecture and construction company. We are a company that offers design and build services for you from initial sketches to the final construction.
-        <p><a href="/services/design-and-build/" class="read-more  read-more--page-box">Read more</a></p>
-      </div>
-    </div>
-    <div class="col-md-4 page-box page-box--block">
-      <a class="page-box__picture" href="/services/tiling-and-painting/">
-        <img width="360" height="240" src="/assets/images/renotheme/demo/content/content_2.jpg" alt="Tiling and Painting" />
+      <a class="page-box__picture" href="/services/driveway-paving/">
+        <img width="360" height="240" src="/assets/images/renotheme/demo/content/service1.jpg" alt="Driveway Paving" />
       </a>
       <div class="page-box__content">
         <h5 class="page-box__title text-uppercase">
-          <a href="/services/tiling-and-painting/">Tiling and Painting</a>
+          <a href="/services/driveway-paving/">Driveway Paving</a>
         </h5>
-        We offer quality tiling and painting solutions for interior and exterior of residential and commercial spaces that not only looks good but also lasts longer. We offer quality tiling and painting solutions for interior and exterior.
-        <p><a href="/services/tiling-and-painting/" class="read-more read-more--page-box">Read more</a></p>
+        Professional driveway paving with pavers or asphalt. We provide durable, attractive driveway solutions that enhance your property's curb appeal and functionality.
+        <p><a href="/services/driveway-paving/" class="read-more read-more--page-box">Read more</a></p>
       </div>
     </div>
-
     <div class="col-md-4 page-box page-box--block">
-      <a class="page-box__picture" href="/services/construction-management/">
-        <img width="360" height="240" src="/assets/images/renotheme/demo/content/content_5.jpg" alt="Construction Management" />
+      <a class="page-box__picture" href="/services/terrace-patio/">
+        <img width="360" height="240" src="/assets/images/renotheme/demo/content/service3.jpg" alt="Terrace and Patio Construction" />
       </a>
       <div class="page-box__content">
         <h5 class="page-box__title text-uppercase">
-          <a href="/services/construction-management/">Construction Management</a>
+          <a href="/services/terrace-patio/">Terrace and Patio Construction</a>
         </h5>
-        We offer commitment at all levels of building project, from preparing for construction to construction management services. For years, we have successfully met our client's demand for cost effective and responsive services.
-        <p><a href="/services/construction-management/" class="read-more read-more--page-box">Read more</a></p>
+        Custom terrace and patio construction using premium materials. Create beautiful outdoor living spaces that extend your home's functionality.
+        <p><a href="/services/terrace-patio/" class="read-more read-more--page-box">Read more</a></p>
+      </div>
+    </div>
+    <div class="col-md-4 page-box page-box--block">
+      <a class="page-box__picture" href="/services/retaining-walls/">
+        <img width="360" height="240" src="/assets/images/renotheme/demo/content/service4.jpg" alt="Retaining Walls" />
+      </a>
+      <div class="page-box__content">
+        <h5 class="page-box__title text-uppercase">
+          <a href="/services/retaining-walls/">Retaining Walls & Concrete Block Walls</a>
+        </h5>
+        Expert construction of retaining walls and concrete block structures. Essential for property stabilization, landscaping, and erosion control.
+        <p><a href="/services/retaining-walls/" class="read-more read-more--page-box">Read more</a></p>
       </div>
     </div>
   </div>
   <div class="spacer"></div>
   <div class="row">
     <div class="col-md-4 page-box page-box--block">
-      <a class="page-box__picture" href="/services/hardwood-flooring/">
-        <img width="360" height="240" src="/assets/images/renotheme/demo/content/content_6.jpg" alt="Hardwood Flooring" />
+      <a class="page-box__picture" href="/services/excavation/">
+        <img width="360" height="240" src="/assets/images/renotheme/demo/content/service5.jpg" alt="Excavation and Land Leveling" />
       </a>
       <div class="page-box__content">
         <h5 class="page-box__title text-uppercase">
-          <a href="/services/hardwood-flooring/">Hardwood Flooring</a>
+          <a href="/services/excavation/">Excavation and Land Leveling</a>
         </h5>
-        By hiring our hardwood flooring services, you can transform the style of your entire house or a particular room easily. We repair, purchase, design and install quality flooring at unbeatable prices.
-        <p><a href="/services/hardwood-flooring/" class="read-more read-more--page-box">Read more</a></p>
+        Professional excavation and land leveling services. Prepare your property for construction, landscaping, or drainage improvements.
+        <p><a href="/services/excavation/" class="read-more read-more--page-box">Read more</a></p>
       </div>
     </div>
     <div class="col-md-4 page-box page-box--block">
-      <a class="page-box__picture" href="/services/condo-remodeling/">
-        <img width="360" height="240" src="/assets/images/renotheme/demo/content/content_7.jpg" alt="Condo Remodeling" />
+      <a class="page-box__picture" href="/services/french-drains/">
+        <img width="360" height="240" src="/assets/images/renotheme/demo/content/service6.jpg" alt="French Drain Installation" />
       </a>
       <div class="page-box__content">
         <h5 class="page-box__title text-uppercase">
-          <a href="/services/condo-remodeling/">Condo Remodeling</a>
+          <a href="/services/french-drains/">French Drain Installation & Drainage Systems</a>
         </h5>
-        Our round condo remodelling services includes plumbing, electrical, flooring and everything else. We implement sophisticated design and technology to give you a beautiful and functional condo.
-        <p><a href="/services/condo-remodeling/" class="read-more read-more--page-box">Read more</a></p>
+        Complete drainage solutions including French drains, weeping tiles, and comprehensive water management systems for your property.
+        <p><a href="/services/french-drains/" class="read-more read-more--page-box">Read more</a></p>
       </div>
     </div>
-
     <div class="col-md-4 page-box page-box--block">
-      <a class="page-box__picture" href="/services/kitchen-remodeling/">
-        <img width="360" height="240" src="/assets/images/renotheme/demo/content/content_8.jpg" alt="Kitchen Remodeling" />
+      <a class="page-box__picture" href="/services/concrete-work/">
+        <img width="360" height="240" src="/assets/images/renotheme/demo/content/service7.jpg" alt="Concrete Work" />
       </a>
       <div class="page-box__content">
         <h5 class="page-box__title text-uppercase">
-          <a href="/services/kitchen-remodeling/">Kitchen Remodeling</a>
+          <a href="/services/concrete-work/">Concrete Work: Stairs, Slabs, Walkways, Crack Repair</a>
         </h5>
-        We can execute complex kitchen remodelling projects that suit your personal style and preferences. We can assist you in making minor kitchen updates or performing entire kitchen remodelling.
-        <p><a href="/services/kitchen-remodeling/" class="read-more read-more--page-box">Read more</a></p>
+        Comprehensive concrete services including new installations, repairs, and maintenance of stairs, slabs, walkways, and crack repairs.
+        <p><a href="/services/concrete-work/" class="read-more read-more--page-box">Read more</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="spacer"></div>
+  <div class="row">
+    <div class="col-md-4 page-box page-box--block">
+      <a class="page-box__picture" href="/services/foundation-repairs/">
+        <img width="360" height="240" src="/assets/images/renotheme/demo/content/service8.jpg" alt="Foundation Repairs" />
+      </a>
+      <div class="page-box__content">
+        <h5 class="page-box__title text-uppercase">
+          <a href="/services/foundation-repairs/">Foundation Repairs and Waterproofing</a>
+        </h5>
+        Expert foundation repair and waterproofing services to protect and stabilize your home's foundation against moisture and structural issues.
+        <p><a href="/services/foundation-repairs/" class="read-more read-more--page-box">Read more</a></p>
+      </div>
+    </div>
+    <div class="col-md-4 page-box page-box--block">
+      <a class="page-box__picture" href="/services/fence-installation/">
+        <img width="360" height="240" src="/assets/images/renotheme/demo/content/service9.jpg" alt="Fence Installation" />
+      </a>
+      <div class="page-box__content">
+        <h5 class="page-box__title text-uppercase">
+          <a href="/services/fence-installation/">Fence and Post Installation</a>
+        </h5>
+        Professional fence and post installation services. Choose from various materials and styles to enhance your property's security and aesthetics.
+        <p><a href="/services/fence-installation/" class="read-more read-more--page-box">Read more</a></p>
+      </div>
+    </div>
+    <div class="col-md-4 page-box page-box--block">
+      <a class="page-box__picture" href="/services/interior-renovations/">
+        <img width="360" height="240" src="/assets/images/renotheme/demo/content/service10.jpg" alt="Interior Renovations" />
+      </a>
+      <div class="page-box__content">
+        <h5 class="page-box__title text-uppercase">
+          <a href="/services/interior-renovations/">Interior Renovations: Drywall, Joints, Plaster, Soundproofing, Painting</a>
+        </h5>
+        Complete interior renovation services including drywall, plastering, soundproofing, painting, and finishing work for beautiful, functional spaces.
+        <p><a href="/services/interior-renovations/" class="read-more read-more--page-box">Read more</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="spacer"></div>
+  <div class="row">
+    <div class="col-md-4 page-box page-box--block">
+      <a class="page-box__picture" href="/services/exterior-finishes/">
+        <img width="360" height="240" src="/assets/images/renotheme/demo/content/content_1.jpg" alt="Exterior Finishes" />
+      </a>
+      <div class="page-box__content">
+        <h5 class="page-box__title text-uppercase">
+          <a href="/services/exterior-finishes/">Exterior Finishes and Upgrades</a>
+        </h5>
+        Professional exterior finishing services including siding, trim work, and exterior upgrades to enhance your home's appearance and protection.
+        <p><a href="/services/exterior-finishes/" class="read-more read-more--page-box">Read more</a></p>
+      </div>
+    </div>
+    <div class="col-md-4 page-box page-box--block">
+      <a class="page-box__picture" href="/services/crack-sealing/">
+        <img width="360" height="240" src="/assets/images/renotheme/demo/content/content_2.jpg" alt="Crack Sealing" />
+      </a>
+      <div class="page-box__content">
+        <h5 class="page-box__title text-uppercase">
+          <a href="/services/crack-sealing/">Crack Sealing, Sealant Work, and Resurfacing</a>
+        </h5>
+        Comprehensive crack sealing, sealant application, and resurfacing services to maintain and restore your concrete and asphalt surfaces.
+        <p><a href="/services/crack-sealing/" class="read-more read-more--page-box">Read more</a></p>
       </div>
     </div>
   </div>
@@ -92,17 +165,27 @@ subtitle: "What We Can Do For You"
       <div class="menu-services-menu-container">
         <ul id="menu-services-menu" class="menu">
           <li class="current-menu-item"><a href="/services/">ALL SERVICES</a></li>
-          <li><a href="/services/construction-management/">CONSTRUCTION MANAGEMENT</a></li>
-          <li><a href="/services/design-and-build/">DESIGN AND BUILD</a></li>
-          <li><a href="/services/kitchen-remodeling/">KITCHEN REMODELING</a></li>
-          <li><a href="/services/tiling-and-painting/">TILING AND PAINTING</a></li>
-          <li><a href="/services/condo-remodeling/">CONDO REMODELING</a></li>
-          <li><a href="/services/hardwood-flooring/">HARDWOOD FLOORING</a></li>
+          <li><a href="/services/driveway-paving/">DRIVEWAY PAVING</a></li>
+          <li><a href="/services/terrace-patio/">TERRACE & PATIO CONSTRUCTION</a></li>
+          <li><a href="/services/retaining-walls/">RETAINING WALLS</a></li>
+          <li><a href="/services/excavation/">EXCAVATION & LAND LEVELING</a></li>
+          <li><a href="/services/french-drains/">FRENCH DRAINS & DRAINAGE</a></li>
+          <li><a href="/services/concrete-work/">CONCRETE WORK</a></li>
+          <li><a href="/services/foundation-repairs/">FOUNDATION REPAIRS</a></li>
+          <li><a href="/services/fence-installation/">FENCE INSTALLATION</a></li>
+          <li><a href="/services/interior-renovations/">INTERIOR RENOVATIONS</a></li>
+          <li><a href="/services/exterior-finishes/">EXTERIOR FINISHES</a></li>
+          <li><a href="/services/crack-sealing/">CRACK SEALING & RESURFACING</a></li>
         </ul>
       </div>
     </div>
   </div>
 </div>
+</div>
 
-
-{% include services-cta.html %}
+<section class="section">
+  <div class="container">
+    <div class="spacer-big"></div>
+    {% include services-cta.html %}
+  </div>
+</section>

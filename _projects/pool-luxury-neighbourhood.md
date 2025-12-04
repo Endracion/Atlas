@@ -1,6 +1,6 @@
 ---
 title: "Pool In Luxury Neighbourhood"
-categories: ["isolation", "plumbing"]
+categories: ["excavation-drainage-systems"]
 thumbnail: "/assets/images/renotheme/demo/projects/6.jpg"
 images:
   - "/assets/images/renotheme/demo/projects/6.jpg"

@@ -1,6 +1,6 @@
 ---
 title: "Green House"
-categories: ["isolation"]
+categories: ["interior-exterior-renovations"]
 thumbnail: "/assets/images/renotheme/demo/projects/1.jpg"
 images:
   - "/assets/images/renotheme/demo/projects/1.jpg"

@@ -1,6 +1,6 @@
 ---
 title: "Kitchen And Living Room"
-categories: ["isolation"]
+categories: ["interior-exterior-renovations"]
 thumbnail: "/assets/images/renotheme/demo/projects/7.jpg"
 images:
   - "/assets/images/renotheme/demo/projects/7.jpg"

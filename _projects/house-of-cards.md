@@ -1,6 +1,6 @@
 ---
 title: "House of Cards"
-categories: ["buildings", "tiling"]
+categories: ["interior-exterior-renovations"]
 thumbnail: "/assets/images/renotheme/demo/projects/2.jpg"
 images:
   - "/assets/images/renotheme/demo/projects/big1.jpg"

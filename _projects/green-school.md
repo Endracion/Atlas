@@ -1,6 +1,6 @@
 ---
 title: "Green School"
-categories: ["isolation", "plumbing"]
+categories: ["interior-exterior-renovations"]
 thumbnail: "/assets/images/renotheme/demo/projects/8.jpg"
 images:
   - "/assets/images/renotheme/demo/projects/8.jpg"

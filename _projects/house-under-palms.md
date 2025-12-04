@@ -1,6 +1,6 @@
 ---
 title: "House Under The Palms"
-categories: ["buildings"]
+categories: ["interior-exterior-renovations"]
 thumbnail: "/assets/images/renotheme/demo/projects/5.jpg"
 images:
   - "/assets/images/renotheme/demo/projects/big1.jpg"
