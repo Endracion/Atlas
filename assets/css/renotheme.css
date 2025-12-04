@@ -1912,6 +1912,83 @@ body, .textwidget { color: #999999; }
 .promo { background-color: #eeeeee; margin-bottom: 30px; }
 .promobg { padding: 30px; background-color: var(--renotheme-primary); background-image: url('../images/motivational-background.jpg'); background-size: cover; }
 
+/* Homepage Custom Styles */
+.services-list {
+  list-style: none;
+  padding: 0;
+}
+
+.services-list li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.service-icon {
+  margin-right: 10px;
+  font-size: 1.2em;
+  color: var(--renotheme-primary);
+}
+
+.why-choose-list {
+  list-style: none;
+  padding: 0;
+}
+
+.why-choose-list li {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.check-icon {
+  margin-right: 10px;
+  color: var(--renotheme-primary);
+  font-size: 1.2em;
+  display: inline-block;
+  width: 20px;
+  text-align: center;
+}
+
+.project-item {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background: #fff;
+}
+
+.project-item h4 {
+  margin-top: 0;
+  color: var(--renotheme-text-dark);
+}
+
+.project-item p {
+  color: #666;
+}
+
+.testimonial {
+  padding: 20px;
+  background: #f9f9f9;
+  border-left: 5px solid var(--renotheme-primary);
+  margin-bottom: 20px;
+  border-radius: 0 5px 5px 0;
+}
+
+.testimonial p {
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.testimonial cite {
+  font-style: normal;
+  color: #666;
+  font-size: 14px;
+}
+
+/* Enhanced spacing for homepage service cards */
+.page-box__content {
+  margin-bottom: 15px;
+}
+
 /* Navigation Menu Item Arrow Fix */
 .navigation--main > .menu-item-has-children > a::after {
   right: calc(50% - 5px);
