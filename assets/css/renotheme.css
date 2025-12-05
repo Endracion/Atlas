@@ -2042,6 +2042,29 @@ body, .textwidget { color: #999999; }
   margin-bottom: 15px;
 }
 
+/* Language Switcher */
+.language-switcher {
+  float: right !important;
+  margin-left: 15px;
+}
+
+.language-switcher .lang-link {
+  background: var(--renotheme-primary);
+  color: white !important;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none !important;
+  transition: all 0.3s ease;
+}
+
+.language-switcher .lang-link:hover {
+  background: var(--renotheme-secondary);
+  color: white !important;
+  text-decoration: none !important;
+}
+
 /* Navigation Menu Item Arrow Fix */
 .navigation--main > .menu-item-has-children > a::after {
   right: calc(50% - 5px);

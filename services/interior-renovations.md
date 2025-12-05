@@ -1,5 +1,5 @@
 ---
-title: Interior Renovations: Drywall, Joints, Plaster, Soundproofing, Painting
+title: "Interior Renovations: Drywall, Joints, Plaster, Soundproofing, Painting"
 layout: renotheme-service
 permalink: /services/interior-renovations/
 ---

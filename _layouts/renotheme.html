@@ -43,7 +43,7 @@ layout: compress
 		<div class="renotheme-container">
 			<div class="row">
 				<div class="col-xs-12 col-md-6">
-					<div class="renotheme-top__left">{{ site.company.name }} - {{ site.company.license }}</div>
+					<div class="renotheme-top__left">{{ site.company.name }} - {{ site.company.license }}{% if page.url contains '/fr/' %} (Licence RBQ){% endif %}</div>
 				</div>
 			</div>
 		</div>
@@ -80,8 +80,8 @@ layout: compress
 					<div class="icon-box">
 						<i class="far fa-clock fa-2x"></i>
 						<div class="icon-box__text">
-							<h4 class="icon-box__title">Mon - Sat 8.00 - 18.00</h4>
-							<span class="icon-box__subtitle">Sunday CLOSED</span>
+							<h4 class="icon-box__title">{% if page.url contains '/fr/' %}Lun - Sam 8h00 - 18h00{% else %}Mon - Sat 8.00 - 18.00{% endif %}</h4>
+							<span class="icon-box__subtitle">{% if page.url contains '/fr/' %}Dimanche FERMÉ{% else %}Sunday CLOSED{% endif %}</span>
 						</div>
 					</div>
 				</div>
@@ -105,22 +105,27 @@ layout: compress
 			<div class="navigation">
 				<div class="collapse  navbar-collapse" id="buildpress-navbar-collapse">
 					<ul id="menu-main-menu" class="navigation--main">
-						<li class="{% if page.url == '/' %}current-menu-item{% endif %}"><a href="/">HOME</a></li>
-						<li class="{% if page.url contains '/portfolio' %}current-menu-item{% endif %}"><a href="/portfolio/">PORTFOLIO</a></li>
+						<li class="{% if page.url == '/' or page.url == '/fr/' %}current-menu-item{% endif %}"><a href="{% if page.url contains '/fr/' %}/fr/{% else %}/{% endif %}">{% if page.url contains '/fr/' %}ACCUEIL{% else %}HOME{% endif %}</a></li>
+						<li class="{% if page.url contains '/portfolio' %}current-menu-item{% endif %}"><a href="{% if page.url contains '/fr/' %}/fr/portfolio/{% else %}/portfolio/{% endif %}">{% if page.url contains '/fr/' %}PORTFOLIO{% else %}PORTFOLIO{% endif %}</a></li>
 						<li class="menu-item-has-children {% if page.url contains '/services' %}current-menu-item{% endif %}">
-							<a href="/services/">OUR SERVICES</a>
+							<a href="{% if page.url contains '/fr/' %}/fr/services/{% else %}/services/{% endif %}">{% if page.url contains '/fr/' %}NOS SERVICES{% else %}OUR SERVICES{% endif %}</a>
 							<ul class="sub-menu">
-								<li><a href="/services/construction-management/">Construction Management</a></li>
-								<li><a href="/services/design-and-build/">Design and Build</a></li>
-								<li><a href="/services/kitchen-remodeling/">Kitchen Remodeling</a></li>
-								<li><a href="/services/tiling-and-painting/">Tiling and Painting</a></li>
-								<li><a href="/services/condo-remodeling/">Condo Remodeling</a></li>
-								<li><a href="/services/hardwood-flooring/">Hardwood Flooring</a></li>
-								<li><a href="/services/">All Services</a></li>
+								<li><a href="{% if page.url contains '/fr/' %}/fr/services/construction-management/{% else %}/services/construction-management/{% endif %}">{% if page.url contains '/fr/' %}Gestion de construction{% else %}Construction Management{% endif %}</a></li>
+								<li><a href="{% if page.url contains '/fr/' %}/fr/services/design-and-build/{% else %}/services/design-and-build/{% endif %}">{% if page.url contains '/fr/' %}Conception et construction{% else %}Design and Build{% endif %}</a></li>
+								<li><a href="{% if page.url contains '/fr/' %}/fr/services/kitchen-remodeling/{% else %}/services/kitchen-remodeling/{% endif %}">{% if page.url contains '/fr/' %}Rénovation de cuisine{% else %}Kitchen Remodeling{% endif %}</a></li>
+								<li><a href="{% if page.url contains '/fr/' %}/fr/services/tiling-and-painting/{% else %}/services/tiling-and-painting/{% endif %}">{% if page.url contains '/fr/' %}Carrelage et peinture{% else %}Tiling and Painting{% endif %}</a></li>
+								<li><a href="{% if page.url contains '/fr/' %}/fr/services/condo-remodeling/{% else %}/services/condo-remodeling/{% endif %}">{% if page.url contains '/fr/' %}Rénovation de condo{% else %}Condo Remodeling{% endif %}</a></li>
+								<li><a href="{% if page.url contains '/fr/' %}/fr/services/hardwood-flooring/{% else %}/services/hardwood-flooring/{% endif %}">{% if page.url contains '/fr/' %}Plancher de bois franc{% else %}Hardwood Flooring{% endif %}</a></li>
+								<li><a href="{% if page.url contains '/fr/' %}/fr/services/{% else %}/services/{% endif %}">{% if page.url contains '/fr/' %}Tous les services{% else %}All Services{% endif %}</a></li>
 							</ul>
 						</li>
-						<li class="{% if page.url contains '/about' %}current-menu-item{% endif %}"><a href="/about/">ABOUT US</a></li>
-						<li class="{% if page.url contains '/contact' %}current-menu-item{% endif %}"><a href="/contact/">CONTACT</a></li>
+						<li class="{% if page.url contains '/about' %}current-menu-item{% endif %}"><a href="{% if page.url contains '/fr/' %}/fr/about/{% else %}/about/{% endif %}">{% if page.url contains '/fr/' %}À PROPOS{% else %}ABOUT US{% endif %}</a></li>
+						<li class="{% if page.url contains '/contact' %}current-menu-item{% endif %}"><a href="{% if page.url contains '/fr/' %}/fr/contact/{% else %}/contact/{% endif %}">{% if page.url contains '/fr/' %}CONTACT{% else %}CONTACT{% endif %}</a></li>
+						<li class="language-switcher">
+							<a href="{% if page.url contains '/fr/' %}{{ page.url | remove:'/fr' | default:'/' }}{% else %}/fr{{ page.url }}{% endif %}" class="lang-link">
+								{% if page.url contains '/fr/' %}EN{% else %}FR{% endif %}
+							</a>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -149,15 +154,14 @@ layout: compress
 					<div class="icon-box">
 						<i class="far fa-clock fa-2x"></i>
 						<div class="icon-box__text">
-							<h4 class="icon-box__title">Mon - Sat 8.00 - 18.00</h4>
-							<span class="icon-box__subtitle">Sunday CLOSED</span>
+							<h4 class="icon-box__title">{% if page.url contains '/fr/' %}Lun - Sam 8h00 - 18h00{% else %}Mon - Sat 8.00 - 18.00{% endif %}</h4>
+							<span class="icon-box__subtitle">{% if page.url contains '/fr/' %}Dimanche FERMÉ{% else %}Sunday CLOSED{% endif %}</span>
 						</div>
 					</div>
 				</div>
 				<div class="widget  widget-social-icons">
-					<a class="social-icons__link" href="#" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
-					<a class="social-icons__link" href="#" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
-					<a class="social-icons__link" href="#" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+					<a class="social-icons__link" href="https://www.facebook.com/Les-Entrepreneurs-Atlas-Inc-1246325508792695/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+					<a class="social-icons__link" href="https://maps.app.goo.gl/WeeMaaggA2aWNqwp6" target="_blank"><i class="fab fa-google fa-2x"></i></a>
 				</div>
 			</div>
 		</div>
@@ -169,15 +173,15 @@ layout: compress
 	<div class="main-title" style="background-color: #f2f2f2">
 		<div class="container">
 			<h1 class="main-title__primary">{{ page.title | default: layout.title }}</h1>
-			<h3 class="main-title__secondary">{{ page.subtitle | default: 'Professional Construction Services' }}</h3>
+			<h3 class="main-title__secondary">{% if page.subtitle %}{{ page.subtitle }}{% elsif page.url contains "/fr/" %}Services de Construction Professionnels{% else %}Professional Construction Services{% endif %}</h3>
 		</div>
 	</div>
 
 	<!-- Breadcrumbs -->
 	<div class="breadcrumbs">
 		<div class="container">
-			<span typeof="v:Breadcrumb"><a title="Go to {{ site.company.name }}." href="/" class="home">{{ site.company.name }}</a></span>
-			{% if page.url != '/' %}
+			<span typeof="v:Breadcrumb"><a title="Go to {{ site.company.name }}." href="{% if page.url contains '/fr/' %}/fr/{% else %}/{% endif %}" class="home">{{ site.company.name }}</a></span>
+			{% if page.url != '/' and page.url != '/fr/' %}
 			<span typeof="v:Breadcrumb"><span>{{ page.title | default: layout.title }}</span></span>
 			{% endif %}
 		</div>
@@ -185,8 +189,12 @@ layout: compress
 	{% endunless %}
 
 	<!-- Hero Carousel Section (only show on home page) -->
-	{% if page.url == '/' %}
+	{% if page.url == '/' or page.url == '/fr/' %}
+	{% if page.url contains '/fr/' %}
+	{% include_relative fr/_includes/carousel.html %}
+	{% else %}
 	{% include carousel.html %}
+	{% endif %}
 	{% endif %}
 
 	<!-- Master Container -->
@@ -210,36 +218,36 @@ layout: compress
 				<div class="row">
 					<div class="col-xs-12 col-md-4">
 						<div class="widget widget_text push-down-30">
-							<h6 class="footer__headings">ABOUT US</h6>
+							<h6 class="footer__headings">{% if page.url contains '/fr/' %}À PROPOS DE NOUS{% else %}ABOUT US{% endif %}</h6>
 							<div class="textwidget">
 								<img src="/assets/images/AtlasLogoTransparent.png" alt="{{ site.company.name }}" width="200" />
 								<br><br>
 								{{ site.description }}
 								<br><br>
-								<strong><a href="/about/" class="read-more">READ MORE</a></strong>
+								<strong><a href="{% if page.url contains '/fr/' %}/fr/about/{% else %}/about/{% endif %}" class="read-more">{% if page.url contains '/fr/' %}EN SAVOIR PLUS{% else %}READ MORE{% endif %}</a></strong>
 							</div>
 						</div>
 					</div>
 					<div class="col-xs-12 col-md-4">
 						<div class="widget widget_nav_menu push-down-30">
-							<h6 class="footer__headings">NAVIGATION</h6>
+							<h6 class="footer__headings">{% if page.url contains '/fr/' %}NAVIGATION{% else %}NAVIGATION{% endif %}</h6>
 							<div class="menu-top-menu-container">
 								<ul id="menu-top-menu-1" class="menu">
-									<li><a href="/services/">Services</a></li>
-									<li><a href="/portfolio/">Portfolio</a></li>
-									<li><a href="/about/">About Us</a></li>
-									<li><a href="/contact/">Contact</a></li>
+									<li><a href="{% if page.url contains '/fr/' %}/fr/services/{% else %}/services/{% endif %}">{% if page.url contains '/fr/' %}Services{% else %}Services{% endif %}</a></li>
+									<li><a href="{% if page.url contains '/fr/' %}/fr/portfolio/{% else %}/portfolio/{% endif %}">{% if page.url contains '/fr/' %}Portfolio{% else %}Portfolio{% endif %}</a></li>
+									<li><a href="{% if page.url contains '/fr/' %}/fr/about/{% else %}/about/{% endif %}">{% if page.url contains '/fr/' %}À propos{% else %}About Us{% endif %}</a></li>
+									<li><a href="{% if page.url contains '/fr/' %}/fr/contact/{% else %}/contact/{% endif %}">{% if page.url contains '/fr/' %}Contact{% else %}Contact{% endif %}</a></li>
 								</ul>
 							</div>
 						</div>
 					</div>
 					<div class="col-xs-12 col-md-4">
 						<div class="widget widget_text push-down-30">
-							<h6 class="footer__headings">GET IN TOUCH</h6>
+							<h6 class="footer__headings">{% if page.url contains '/fr/' %}NOUS JOINDRE{% else %}GET IN TOUCH{% endif %}</h6>
 							<div class="textwidget">
-								Ready to start your construction project? Contact us today for a free consultation and quote.
+								{% if page.url contains '/fr/' %}Prêt à commencer votre projet de construction? Contactez-nous aujourd'hui pour une consultation gratuite et un devis.{% else %}Ready to start your construction project? Contact us today for a free consultation and quote.{% endif %}
 								<br><br>
-								<a class="renotheme-btn renotheme-btn-primary" href="/contact/">CONTACT US</a>
+								<a class="renotheme-btn renotheme-btn-primary" href="{% if page.url contains '/fr/' %}/fr/contact/{% else %}/contact/{% endif %}">{% if page.url contains '/fr/' %}NOUS CONTACTER{% else %}CONTACT US{% endif %}</a>
 							</div>
 						</div>
 					</div>
@@ -249,10 +257,10 @@ layout: compress
 		<div class="footer-bottom">
 			<div class="container">
 				<div class="footer-bottom__left">
-					{{ site.company.name }} - Licensed General Contractor
+					{{ site.company.name }} - {% if page.url contains '/fr/' %}Entrepreneur général licencié{% else %}Licensed General Contractor{% endif %}
 				</div>
 				<div class="footer-bottom__right">
-					&copy; {{ site.time | date: '%Y' }} <strong>{{ site.company.name }}</strong>. All rights reserved.
+					&copy; {{ site.time | date: '%Y' }} <strong>{{ site.company.name }}</strong>. {% if page.url contains '/fr/' %}Tous droits réservés.{% else %}All rights reserved.{% endif %}
 				</div>
 			</div>
 		</div>

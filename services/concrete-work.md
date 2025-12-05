@@ -1,5 +1,5 @@
 ---
-title: Concrete Work: Stairs, Slabs, Walkways, Crack Repair
+title: "Concrete Work: Stairs, Slabs, Walkways, Crack Repair"
 layout: renotheme-service
 permalink: /services/concrete-work/
 ---
